@@ -37,7 +37,7 @@
 <meta name="twitter:description" content="Turnkey Web2App packaging, image-to-app synthesis, high-performance VPN engineering, and SSD cPanel cloud hosting.">
 <meta name="twitter:image" content="assets/logo.jpg">
 
-<!-- Structured Data (JSON-LD) -->
+<!-- Structured Data (JSON-LD Organization + SoftwareApplication + FAQPage) -->
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -159,6 +159,7 @@ body{
   background:var(--paper);
   line-height:1.55;
   -webkit-font-smoothing:antialiased;
+  touch-action:pan-y;
 }
 a{color:inherit}
 img, svg{max-width:100%;height:auto;vertical-align:middle}
@@ -170,7 +171,7 @@ img, svg{max-width:100%;height:auto;vertical-align:middle}
   max-width:100%;
 }
 
-/* Brand Wordmark & Image Logo (Assets JPG Aware) */
+/* Brand Wordmark & Image Logo */
 .brand{display:inline-flex;align-items:center;gap:8px;text-decoration:none;flex-shrink:0}
 .brand-logo-img{height:30px;max-width:130px;object-fit:contain}
 .brand-wordmark{font-size:22px;font-weight:900;letter-spacing:-1.1px;color:var(--ink);white-space:nowrap;line-height:1.1}
@@ -280,7 +281,7 @@ header{
 /* Hero Section */
 .hero{
   position:relative;
-  padding:72px 0 54px;
+  padding:64px 0 46px;
   background:radial-gradient(ellipse at 50% -10%,#ffffff 0%,#f0f7fb 60%,var(--bg-grey) 100%);
   text-align:center;
   overflow:hidden;
@@ -300,24 +301,25 @@ header{
   letter-spacing:.06em;
 }
 .dot{width:7px;height:7px;border-radius:50%;background:#e8a500;box-shadow:0 0 0 4px #ffcf5638;flex-shrink:0}
-h1{font-size:clamp(30px,4.5vw,54px);line-height:1.1;letter-spacing:-.045em;max-width:920px;margin:18px auto 14px;word-break:break-word}
+h1{font-size:clamp(30px,4.5vw,54px);line-height:1.1;letter-spacing:-.045em;max-width:920px;margin:16px auto 12px;word-break:break-word}
 h1 span{color:var(--teal)}
-.lead{font-size:clamp(14.5px,1.6vw,17.5px);line-height:1.7;color:var(--muted);max-width:820px;margin:0 auto 24px}
+.lead{font-size:clamp(14.5px,1.6vw,17.5px);line-height:1.7;color:var(--muted);max-width:820px;margin:0 auto 20px}
 .actions{display:flex;justify-content:center;gap:10px;flex-wrap:wrap}
-.fine{font-size:11.5px;color:var(--muted);margin-top:14px}
-.status{display:none;max-width:600px;margin:14px auto 0;padding:10px 14px;border-radius:10px;background:#fff4d6;color:#755200;font-size:13px}
+.fine{font-size:11.5px;color:var(--muted);margin-top:12px}
+.status{display:none;max-width:600px;margin:12px auto 0;padding:10px 14px;border-radius:10px;background:#fff4d6;color:#755200;font-size:13px}
 .status.show{display:block}
-.trustline{display:flex;gap:18px;justify-content:center;flex-wrap:wrap;color:#334155;font-size:12px;font-weight:650;margin-top:26px}
+.trustline{display:flex;gap:18px;justify-content:center;flex-wrap:wrap;color:#334155;font-size:12px;font-weight:650;margin-top:22px}
 .trustline span:before{content:"✓";color:var(--teal);font-weight:900;margin-right:6px}
 
-/* ===== SCROLLYTELLING 3D SHOWCASE SECTION (THE 8 MECHANICS) ===== */
+/* ===== NO DEAD-SPACE 3D SCROLLYTELLING SHOWCASE ===== */
 .scrolly-section{
   position:relative;
-  height:360vh; /* Controlled scrub timeline */
+  height:180vh; /* Tight scrub duration, zero massive gaps */
   background:#051323;
   color:#fff;
   width:100%;
-  overflow:visible;
+  margin:0;
+  padding:0;
 }
 .scrolly-pin-wrap{
   position:sticky;
@@ -331,10 +333,10 @@ h1 span{color:var(--teal)}
   perspective:1200px;
 }
 
-/* 3. Kinetic Background Typography */
+/* 3. Kinetic Background Typography Fade & Scale */
 .scrolly-bg-typo{
   position:absolute;
-  font-size:clamp(64px,15vw,170px);
+  font-size:clamp(60px,14vw,160px);
   font-weight:950;
   letter-spacing:-.06em;
   color:rgba(255,255,255,0.06);
@@ -354,7 +356,7 @@ h1 span{color:var(--teal)}
   position:relative;
   z-index:5;
   width:min(440px,88vw);
-  height:360px;
+  height:330px;
   display:flex;
   align-items:center;
   justify-content:center;
@@ -366,26 +368,26 @@ h1 span{color:var(--teal)}
 .core-layer-cap{
   position:absolute;
   width:220px;
-  height:65px;
-  border-radius:18px;
+  height:58px;
+  border-radius:16px;
   background:linear-gradient(135deg,#00f2fe,#00c48c);
   border:1px solid rgba(255,255,255,0.5);
   box-shadow:0 12px 30px rgba(0,242,254,0.35);
   display:flex;
   align-items:center;
   justify-content:center;
-  font-size:12px;
+  font-size:11.5px;
   font-weight:900;
   color:#06182a;
   letter-spacing:.05em;
-  top:30px;
+  top:20px;
   will-change:transform;
 }
 .core-layer-mid{
   position:absolute;
   width:260px;
-  height:140px;
-  border-radius:24px;
+  height:130px;
+  border-radius:20px;
   background:linear-gradient(145deg,#0e2f4c,#091f35);
   border:1px solid #1a4f7e;
   box-shadow:0 20px 50px rgba(0,0,0,0.6);
@@ -393,35 +395,35 @@ h1 span{color:var(--teal)}
   flex-direction:column;
   align-items:center;
   justify-content:center;
-  gap:6px;
-  top:110px;
+  gap:4px;
+  top:100px;
   will-change:transform;
 }
-.core-layer-mid span{font-size:18px;font-weight:900;color:#fff;letter-spacing:-.03em}
-.core-layer-mid small{font-size:11px;color:#00f2fe;font-weight:750;text-transform:uppercase;letter-spacing:.08em}
+.core-layer-mid span{font-size:17px;font-weight:900;color:#fff;letter-spacing:-.03em}
+.core-layer-mid small{font-size:10.5px;color:#00f2fe;font-weight:750;text-transform:uppercase;letter-spacing:.08em}
 .core-layer-base{
   position:absolute;
   width:240px;
-  height:50px;
-  border-radius:16px;
+  height:46px;
+  border-radius:14px;
   background:#071b2d;
   border:1px solid #143d63;
   box-shadow:0 10px 28px rgba(0,0,0,0.4);
   display:flex;
   align-items:center;
   justify-content:center;
-  font-size:11px;
+  font-size:10.5px;
   font-weight:800;
   color:#64748b;
-  bottom:35px;
+  bottom:30px;
   will-change:transform;
 }
 
-/* 6. Model Morph / Terminal State Swap Target */
+/* 6. Model Morph / State Swap Target */
 .core-swapped-view{
   position:absolute;
-  inset:20px;
-  border-radius:22px;
+  inset:16px;
+  border-radius:20px;
   background:linear-gradient(145deg,#041424,#0b2d49);
   border:1px solid #00f2fe;
   box-shadow:0 20px 60px rgba(0,242,254,0.22);
@@ -429,48 +431,48 @@ h1 span{color:var(--teal)}
   flex-direction:column;
   align-items:center;
   justify-content:center;
-  padding:20px;
+  padding:18px;
   opacity:0;
   pointer-events:none;
   will-change:opacity, transform;
 }
-.core-swapped-view h4{margin:0 0 4px;font-size:17px;color:#00e5a3}
-.core-swapped-view p{margin:0;font-size:12px;color:#94a3b8;text-align:center}
+.core-swapped-view h4{margin:0 0 4px;font-size:16px;color:#00e5a3}
+.core-swapped-view p{margin:0;font-size:11.5px;color:#94a3b8;text-align:center}
 
 /* 4. Radial Pop-in Callout Badges */
 .radial-badge{
   position:absolute;
   background:#092138;
   border:1px solid #1a4d7a;
-  border-radius:14px;
-  padding:10px 14px;
+  border-radius:12px;
+  padding:8px 12px;
   display:flex;
   align-items:center;
-  gap:10px;
-  box-shadow:0 14px 35px rgba(0,0,0,0.5);
+  gap:8px;
+  box-shadow:0 12px 30px rgba(0,0,0,0.5);
   opacity:0;
   transform:scale(0.5);
   pointer-events:none;
   will-change:transform, opacity;
   z-index:6;
 }
-.radial-badge .rb-icon{width:30px;height:30px;border-radius:8px;background:#03425f;color:#00f2fe;display:grid;place-items:center;font-size:14px}
-.radial-badge strong{font-size:12px;color:#fff;display:block}
-.radial-badge span{font-size:10.5px;color:#94a3b8}
+.radial-badge .rb-icon{width:26px;height:26px;border-radius:7px;background:#03425f;color:#00f2fe;display:grid;place-items:center;font-size:13px}
+.radial-badge strong{font-size:11.5px;color:#fff;display:block}
+.radial-badge span{font-size:10px;color:#94a3b8}
 
-.badge-pos-tl{top:15px;left:-60px}
-.badge-pos-tr{top:15px;right:-60px}
-.badge-pos-bl{bottom:25px;left:-60px}
-.badge-pos-br{bottom:25px;right:-60px}
+.badge-pos-tl{top:15px;left:-45px}
+.badge-pos-tr{top:15px;right:-45px}
+.badge-pos-bl{bottom:25px;left:-45px}
+.badge-pos-br{bottom:25px;right:-45px}
 
-/* 7. Staggered Vertical Benefit Slide-In Cards (Left Rail) */
+/* 7. Staggered Vertical Card Slide-In (Left Rail) */
 .scrolly-left-content{
   position:absolute;
   left:calc((100% - 1180px)/2 + 20px);
   width:min(440px,90vw);
   display:flex;
   flex-direction:column;
-  gap:12px;
+  gap:10px;
   z-index:8;
   pointer-events:none;
 }
@@ -478,17 +480,17 @@ h1 span{color:var(--teal)}
   background:rgba(9,33,56,0.92);
   backdrop-filter:blur(10px);
   border:1px solid #163d63;
-  border-radius:14px;
-  padding:16px 18px;
+  border-radius:12px;
+  padding:14px 16px;
   display:flex;
-  gap:12px;
+  gap:10px;
   opacity:0;
-  transform:translateY(40px);
+  transform:translateY(35px);
   will-change:transform, opacity;
 }
-.benefit-slide-card .b-icon{width:32px;height:32px;border-radius:9px;background:#033d59;color:#00e5a3;display:grid;place-items:center;font-size:15px;flex-shrink:0}
-.benefit-slide-card h4{margin:0 0 3px;font-size:14px;color:#fff}
-.benefit-slide-card p{margin:0;font-size:11.5px;color:#94a3b8;line-height:1.5}
+.benefit-slide-card .b-icon{width:30px;height:30px;border-radius:8px;background:#033d59;color:#00e5a3;display:grid;place-items:center;font-size:14px;flex-shrink:0}
+.benefit-slide-card h4{margin:0 0 2px;font-size:13.5px;color:#fff}
+.benefit-slide-card p{margin:0;font-size:11px;color:#94a3b8;line-height:1.45}
 
 /* Progressive Showcase Pipeline Flow Container */
 .flow-container{
@@ -496,7 +498,7 @@ h1 span{color:var(--teal)}
   color:#fff;
   border-radius:22px;
   padding:28px 20px;
-  margin:28px auto 20px;
+  margin:0 auto 20px;
   box-shadow:0 24px 60px rgba(0,0,0,0.45);
   border:1px solid #143555;
   width:100%;
@@ -680,16 +682,16 @@ h1 span{color:var(--teal)}
   white-space:nowrap;
 }
 
-/* Sections */
-.section{padding:64px 0;width:100%;max-width:100%;overflow-x:hidden}
+/* Sections with Natural 3D Perspective Triggers */
+.section{padding:58px 0;width:100%;max-width:100%;overflow-x:hidden}
 .section-white{background:#fff;border-block:1px solid var(--line)}
 .section-grey{background:var(--bg-grey);border-block:1px solid var(--bg-grey-border)}
-.section-head{text-align:center;max-width:760px;margin:0 auto 28px}
+.section-head{text-align:center;max-width:760px;margin:0 auto 26px}
 .eyebrow{font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:#b07c00;font-weight:850;margin:0 0 8px}
 .section h2{font-size:clamp(22px,3vw,34px);line-height:1.16;letter-spacing:-.03em;margin:0 0 10px}
 .sub{color:var(--muted);font-size:14px;margin:0}
 
-/* Cards & Grid */
+/* Cards & Grid (With 3D Parallax Tilt Hook) */
 .grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;width:100%}
 .card{
   background:#fff;
@@ -701,8 +703,10 @@ h1 span{color:var(--teal)}
   display:flex;
   flex-direction:column;
   justify-content:space-between;
+  transform:perspective(1000px);
+  will-change:transform, opacity;
 }
-.card:hover{transform:translateY(-3px);border-color:#38bdf8;box-shadow:var(--shadow)}
+.card:hover{transform:perspective(1000px) translateY(-4px) rotateX(2deg);border-color:#38bdf8;box-shadow:var(--shadow)}
 .icon{width:40px;height:40px;border-radius:11px;background:#e6fbf4;color:#009a6a;display:grid;place-items:center;font-size:19px;margin-bottom:14px;flex-shrink:0}
 .card h3{font-size:16px;line-height:1.25;margin:0 0 6px}
 .card p{font-size:12.5px;color:var(--muted);line-height:1.6;margin:0}
@@ -739,6 +743,7 @@ h1 span{color:var(--teal)}
   background:#fff;
   border:1px solid var(--line);
   border-radius:14px;
+  transform:perspective(1000px);
 }
 .check{flex:0 0 24px;width:24px;height:24px;border-radius:99px;background:#e0f2fe;color:var(--skyblue);display:grid;place-items:center;font-weight:900;font-size:12px}
 .feature-row h3{font-size:14px;margin:0 0 3px}
@@ -752,8 +757,9 @@ h1 span{color:var(--teal)}
   border-radius:14px;
   padding:18px;
   transition:all .2s;
+  transform:perspective(1000px);
 }
-.host-feature-item:hover{transform:translateY(-3px);border-color:#38bdf8;box-shadow:var(--shadow)}
+.host-feature-item:hover{transform:perspective(1000px) translateY(-3px) rotateX(2deg);border-color:#38bdf8;box-shadow:var(--shadow)}
 .host-feature-item h4{margin:0 0 4px;font-size:14.5px;color:#0f172a}
 .host-feature-item p{margin:0;font-size:12px;color:var(--muted);line-height:1.55}
 
@@ -768,7 +774,9 @@ h1 span{color:var(--teal)}
   display:flex;
   flex-direction:column;
   justify-content:space-between;
+  transform:perspective(1000px);
 }
+.framework-card:hover{transform:perspective(1000px) translateY(-3px) rotateX(2deg);border-color:#38bdf8;box-shadow:var(--shadow)}
 .framework-card .badge{
   display:inline-block;
   background:var(--skyblue-light);
@@ -809,13 +817,12 @@ h1 span{color:var(--teal)}
   text-align:center;
   position:relative;
   overflow:hidden;
-  width:100%;
 }
 .cta h2{font-size:clamp(22px,3.2vw,34px);margin:0 0 8px}
 .cta p{color:#e0f2fe;max-width:620px;margin:0 auto 18px;font-size:13.5px;line-height:1.65}
 
 /* Interactive FAQ Accordion */
-.faq-box{max-width:860px;margin:0 auto 36px;display:grid;gap:10px;width:100%}
+.faq-box{max-width:860px;margin:0 auto 32px;display:grid;gap:10px;width:100%}
 .faq-item{background:#fff;border:1px solid var(--line);border-radius:12px;overflow:hidden;transition:border-color .2s}
 .faq-item:hover{border-color:#38bdf8}
 .faq-trigger{
@@ -1025,7 +1032,7 @@ h1 span{color:var(--teal)}
 .d-bottom-tile{background:#fff;border:1px solid #e5e9f0;border-radius:9px;padding:9px 10px;font-size:10px;display:flex;flex-direction:column;gap:2px}
 .d-bottom-tile strong{font-size:11px;color:#0f172a}
 
-/* In-Development Modal */
+/* In-Development Advisory Modal */
 .dev-modal-overlay{position:fixed;inset:0;background:rgba(10,25,38,0.7);backdrop-filter:blur(5px);z-index:150;display:none;align-items:center;justify-content:center;padding:16px}
 .dev-modal-overlay.show{display:flex}
 .dev-modal{background:#fff;border-radius:16px;width:min(380px,100%);padding:22px 20px;text-align:center;box-shadow:0 16px 45px rgba(0,0,0,0.25)}
@@ -1033,6 +1040,47 @@ h1 span{color:var(--teal)}
 .dev-modal h3{margin:0 0 6px;font-size:16px}
 .dev-modal p{margin:0 0 16px;font-size:12.5px;color:var(--muted);line-height:1.55}
 .dev-modal .btn-close-dev{width:100%;padding:9px;background:#0284c7;color:#fff;border:none;border-radius:8px;font-weight:750;font-size:12.5px;cursor:pointer}
+
+/* Responsive Breakpoints */
+@media(max-width:960px){
+  .navlinks{display:none}
+  .mobile-menu-toggle{display:block}
+  .top .btn-gold{display:none}
+  .d-shell{grid-template-columns:1fr}
+  .d-sidebar{display:none}
+  .d-stats-4{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .d-middle-grid,.d-lower-grid{grid-template-columns:1fr}
+  .d-bottom-row{grid-template-columns:repeat(3,minmax(0,1fr))}
+  .flow-modules-grid{grid-template-columns:1fr}
+  .pillars-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .trust-ribbon-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .footer-mid-row{grid-template-columns:1fr}
+  .footer-top{grid-template-columns:1fr}
+}
+@media(max-width:768px){
+  .auth-body-split{grid-template-columns:1fr}
+  .auth-side-perks{display:none}
+  .auth-providers-row{grid-template-columns:1fr}
+  .grid,.feature-layout,.steps,.hosting-features-grid,.framework-suite{grid-template-columns:1fr}
+  .inquiry-grid{grid-template-columns:1fr}
+  .footer-columns{grid-template-columns:repeat(2,minmax(0,1fr))}
+}
+@media(max-width:480px){
+  .wrap{width:calc(100% - 24px)}
+  .header{min-height:60px}
+  .d-stats-4{grid-template-columns:1fr}
+  .d-charts-split{grid-template-columns:1fr}
+  .d-bottom-row{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .pillars-grid{grid-template-columns:1fr}
+  .trust-ribbon-grid{grid-template-columns:1fr}
+  .gateway-selection-grid{grid-template-columns:1fr}
+  .phone-box-worldwide{grid-template-columns:1fr}
+  .footer-columns{grid-template-columns:1fr}
+  .flow-stepper{flex-direction:column;gap:6px}
+  .flow-step-divider{display:none}
+  .hero{padding:54px 0 42px}
+  .btn{padding:8px 12px;font-size:12px}
+}
 </style>
 </head>
 <body>
@@ -1046,6 +1094,7 @@ h1 span{color:var(--teal)}
         <span class="brand-wordmark" aria-label="EsselTen">Essel<b>Ten</b></span>
       </a>
 
+      <!-- Desktop Links -->
       <nav class="navlinks" aria-label="Main navigation">
         <a href="#features">Features</a>
         <a href="#web2app">Web2App</a>
@@ -1054,6 +1103,7 @@ h1 span{color:var(--teal)}
         <a href="#integrations">Integrations</a>
       </nav>
 
+      <!-- Action Cluster -->
       <div class="nav">
         <a class="btn btn-whatsapp-top" href="https://wa.me/233202186264?text=Hello%20EsselTen%2C%20I%20would%20like%20to%20inquire%20about%20your%20services" target="_blank" rel="noopener noreferrer">
           <img src="assets/whatsapp.jpg" alt="" style="width:14px;height:14px" onerror="this.style.display='none'"> WhatsApp
@@ -1064,6 +1114,7 @@ h1 span{color:var(--teal)}
       </div>
     </header>
 
+    <!-- Mobile Drawer Navigation -->
     <div class="mobile-drawer" id="mobile-nav-drawer">
       <a href="#features" onclick="toggleMobileNav()">Features</a>
       <a href="#web2app" onclick="toggleMobileNav()">Web2App</a>
@@ -1306,20 +1357,20 @@ h1 span{color:var(--teal)}
 
         <!-- 24/7 Security Ribbon -->
         <div class="security-monitor-bar">
-          <div class="sec-left">
-            <div class="sec-shield">🛡️</div>
-            <div class="sec-text">
-              <strong>Full 24/7 Security Monitoring</strong>
-              <span>EsselTen, Domains, Hosting and Professional Email are protected by continuous PCI DSS Security monitoring.</span>
+            <div class="sec-left">
+              <div class="sec-shield">🛡️</div>
+              <div class="sec-text">
+                <strong>Full 24/7 Security Monitoring</strong>
+                <span>EsselTen, Domains, Hosting and Professional Email are protected by continuous PCI DSS Security monitoring.</span>
+              </div>
+            </div>
+            <div class="sec-pills">
+              <span class="sec-pill-tag">✓ Payments</span>
+              <span class="sec-pill-tag">✓ Domains</span>
+              <span class="sec-pill-tag">✓ Hosting</span>
+              <span class="sec-pill-tag">✓ Professional Email</span>
             </div>
           </div>
-          <div class="sec-pills">
-            <span class="sec-pill-tag">✓ Payments</span>
-            <span class="sec-pill-tag">✓ Domains</span>
-            <span class="sec-pill-tag">✓ Hosting</span>
-            <span class="sec-pill-tag">✓ Professional Email</span>
-          </div>
-        </div>
       </div>
     </div>
 
@@ -2078,7 +2129,7 @@ h1 span{color:var(--teal)}
   </div>
 </div>
 
-<!-- ===== ADVANCED LIGHT DASHBOARD ===== -->
+<!-- ===== FULL REPLICATED DASHBOARD (IMAGE 2 EXACT DESIGN) ===== -->
 <div id="dashboard-view">
   <div class="d-shell">
     <aside class="d-sidebar" aria-label="Dashboard Sidebar">
@@ -2568,28 +2619,28 @@ h1 span{color:var(--teal)}
 
   byId('year').textContent = new Date().getFullYear();
 
-  // ===== 8-EFFECT SCROLLYTELLING ANIMATION ENGINE (LENIS + GSAP) =====
+  // ===== PAGE-WIDE 3D SCROLLYTELLING & PARALLAX ENGINE =====
   function initScrollytelling() {
     gsap.registerPlugin(ScrollTrigger);
 
-    // 8. Inertia / Momentum Smooth Scrolling (Lenis)
+    // 8. Fluid Inertia Scrolling Across Entire Page
     const lenis = new Lenis({
-      duration: 1.2,
+      duration: 1.1,
       easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
       smoothWheel: true,
-      touchMultiplier: 1.4,
+      touchMultiplier: 1.25,
     });
     lenis.on('scroll', ScrollTrigger.update);
     gsap.ticker.add((time) => { lenis.raf(time * 1000); });
     gsap.ticker.lagSmoothing(0);
 
-    // 2. Viewport Pinning & Master Timeline
+    // 2. Viewport Pinning & Master Timeline with Zero Empty Space
     const mainTimeline = gsap.timeline({
       scrollTrigger: {
         trigger: "#scrollytelling-showcase",
         start: "top top",
-        end: "+=2600",
-        scrub: 1,
+        end: "+=1300",
+        scrub: 0.8,
         pin: true,
         anticipatePin: 1,
       }
@@ -2597,25 +2648,25 @@ h1 span{color:var(--teal)}
 
     // 3. Kinetic Typography Fade & Scale
     mainTimeline.to("#scrolly-typo", {
-      scale: 0.72,
+      scale: 0.76,
       opacity: 0.01,
-      filter: "blur(12px)",
-      duration: 2,
+      filter: "blur(10px)",
+      duration: 1.6,
       ease: "power2.out"
     }, 0);
 
     // 1. Scroll-Driven 3D Assembly ("Exploded View" -> Unified Compact Core)
     mainTimeline.to("#layer-cap", {
-      top: "100px",
-      scale: 0.96,
-      duration: 2.2,
+      top: "92px",
+      scale: 0.98,
+      duration: 1.8,
       ease: "power2.inOut"
     }, 0);
 
     mainTimeline.to("#layer-base", {
-      bottom: "95px",
-      scale: 0.96,
-      duration: 2.2,
+      bottom: "86px",
+      scale: 0.98,
+      duration: 1.8,
       ease: "power2.inOut"
     }, 0);
 
@@ -2623,69 +2674,75 @@ h1 span{color:var(--teal)}
     mainTimeline.to(["#r-badge-1", "#r-badge-2", "#r-badge-3", "#r-badge-4"], {
       scale: 1,
       opacity: 1,
-      stagger: 0.25,
-      duration: 1.8,
+      stagger: 0.18,
+      duration: 1.4,
       ease: "back.out(1.8)"
-    }, 1.2);
+    }, 0.8);
 
-    // Fade badges out as camera shifts
     mainTimeline.to(["#r-badge-1", "#r-badge-2", "#r-badge-3", "#r-badge-4"], {
-      scale: 0.75,
+      scale: 0.8,
       opacity: 0,
-      duration: 1.2,
+      duration: 0.8,
       ease: "power2.in"
-    }, 3.5);
+    }, 2.4);
 
-    // 5. Position & Spatial Translation (Model glides right on desktop)
+    // 5. Position & Spatial Translation (Reframing smoothly to right)
     const isMobile = window.innerWidth <= 960;
     mainTimeline.to("#scrolly-stage", {
-      x: isMobile ? 0 : 250,
-      y: isMobile ? -140 : 0,
-      scale: isMobile ? 0.75 : 0.88,
-      rotateY: isMobile ? 0 : -14,
-      duration: 3,
+      x: isMobile ? 0 : 240,
+      y: isMobile ? -110 : 0,
+      scale: isMobile ? 0.78 : 0.92,
+      rotateY: isMobile ? 0 : -12,
+      duration: 2.4,
       ease: "power2.inOut"
-    }, 4.2);
+    }, 2.8);
 
-    // 6. Seamless Asset / State Swap (Core morphs into Live Runtime Node)
+    // 6. Seamless State Swap (Morph into Production Runtime Node)
     mainTimeline.to(["#layer-cap", "#layer-mid", "#layer-base"], {
       opacity: 0,
-      scale: 0.85,
-      duration: 1.5,
+      scale: 0.88,
+      duration: 1.2,
       ease: "power2.inOut"
-    }, 4.8);
+    }, 3.4);
 
     mainTimeline.to("#core-swapped", {
       opacity: 1,
       scale: 1,
-      duration: 1.8,
+      duration: 1.4,
       ease: "power2.out"
-    }, 5.0);
+    }, 3.6);
 
-    // 7. Staggered Vertical Card Slide-In (Left Rail Content)
+    // 7. Staggered Vertical Card Slide-In (Left Rail Benefits)
     mainTimeline.to(["#b-card-1", "#b-card-2", "#b-card-3", "#b-card-4"], {
       y: 0,
       opacity: 1,
-      stagger: 0.35,
-      duration: 2,
+      stagger: 0.25,
+      duration: 1.6,
       ease: "power2.out"
-    }, 4.6);
+    }, 3.2);
+
+    // Global 3D Perspective Tilt on All Cards Down the Page
+    gsap.utils.toArray(".card, .host-feature-item, .framework-card").forEach((elem) => {
+      gsap.fromTo(elem, 
+        { opacity: 0.2, rotateX: 6, y: 35, transformPerspective: 1000 },
+        { 
+          opacity: 1, 
+          rotateX: 0, 
+          y: 0, 
+          duration: 1, 
+          ease: "power2.out",
+          scrollTrigger: {
+            trigger: elem,
+            start: "top 88%",
+            end: "top 65%",
+            scrub: true
+          }
+        }
+      );
+    });
   }
 
   window.addEventListener('DOMContentLoaded', initScrollytelling);
-
-  // Standard Scroll Reveals
-  function initObserver() {
-    const items = document.querySelectorAll('.reveal');
-    if (!('IntersectionObserver' in window)) { items.forEach(el => el.classList.add('in-view')); return; }
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) { entry.target.classList.add('in-view'); observer.unobserve(entry.target); }
-      });
-    }, { threshold: 0.12 });
-    items.forEach(el => observer.observe(el));
-  }
-  initObserver();
 </script>
 
 </body>
