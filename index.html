@@ -6,48 +6,48 @@
 <meta name="theme-color" content="#071524">
 <title>EsselTen — Enterprise Development, Hosting &amp; Operating Platform</title>
 <meta name="description" content="EsselTen is an enterprise development and business operating platform offering turnkey Web2App transformation, visual code synthesis, VPN protocol engineering, automated cPanel cloud hosting, and global checkout infrastructure.">
-<link rel="canonical" href="esselten-d8100.firebaseapp.com">
+<link rel="canonical" href="https://davidofoli59.github.io/EsselTen/">
 
-
+<!-- Google Site Verification -->
 <meta name="google-site-verification" content="Dl_OK0P276Mt9T-QqErDdBnqUFXvZLRn6BDNodan5Xo">
 
-
+<!-- Search Engine Robots & Trust Directives -->
 <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
 <meta name="googlebot" content="index, follow">
 <meta name="bingbot" content="index, follow">
 <meta name="rating" content="General">
 <meta name="author" content="EsselTen Global Architecture">
 
-
+<!-- Security & Anti-Exploit Directives -->
 <meta http-equiv="X-Content-Type-Options" content="nosniff">
 <meta http-equiv="X-XSS-Protection" content="1; mode=block">
 <meta name="referrer" content="strict-origin-when-cross-origin">
 
-
+<!-- Open Graph / Meta -->
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="EsselTen">
-<meta property="og:url" content="esselten.web.app">
+<meta property="og:url" content="https://davidofoli59.github.io/EsselTen/">
 <meta property="og:title" content="EsselTen — Enterprise Development, Hosting &amp; Operating Platform">
 <meta property="og:description" content="Turnkey Web2App packaging, image-to-app synthesis, high-performance VPN engineering, and SSD cPanel cloud hosting.">
 <meta property="og:image" content="assets/logo.jpg">
 
-
+<!-- Twitter Card -->
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="EsselTen — Enterprise Development, Hosting &amp; Operating Platform">
 <meta name="twitter:description" content="Turnkey Web2App packaging, image-to-app synthesis, high-performance VPN engineering, and SSD cPanel cloud hosting.">
 <meta name="twitter:image" content="assets/logo.jpg">
 
-<!-- Structured Data (JSON-LD Organization + SoftwareApplication + FAQPage) -->
+<!-- Structured Data (JSON-LD) -->
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@graph": [
     {
       "@type": "Organization",
-      "@id": "esselten.web.app#organization",
+      "@id": "https://davidofoli59.github.io/EsselTen/#organization",
       "name": "EsselTen",
-      "url": "esselten.web.app",
-      "logo": "esselten-d8100.firebaseapp.com/assets/logo.jpg",
+      "url": "https://davidofoli59.github.io/EsselTen/",
+      "logo": "https://davidofoli59.github.io/EsselTen/assets/logo.jpg",
       "contactPoint": {
         "@type": "ContactPoint",
         "telephone": "+233202186264",
@@ -58,12 +58,12 @@
     },
     {
       "@type": "SoftwareApplication",
-      "@id": "esselten.web.app#software",
+      "@id": "https://davidofoli59.github.io/EsselTen/#software",
       "name": "EsselTen",
       "applicationCategory": "DeveloperApplication, BusinessApplication",
       "operatingSystem": "All",
       "description": "Enterprise developer and business operating platform for Web2App transformation, visual code synthesis, VPN protocol engineering, and SSD cPanel cloud hosting.",
-      "url"; "esselten-d8100.firebaseapp.com",
+      "url": "https://davidofoli59.github.io/EsselTen/",
       "offers": {
         "@type": "Offer",
         "price": "0",
@@ -73,7 +73,7 @@
     },
     {
       "@type": "FAQPage",
-      "@id": "esselten.web.app",
+      "@id": "https://davidofoli59.github.io/EsselTen/#faq",
       "mainEntity": [
         {
           "@type": "Question",
@@ -105,8 +105,13 @@
 }
 </script>
 
-
+<!-- Google reCAPTCHA Enterprise -->
 <script src="https://www.google.com/recaptcha/enterprise.js?render=6LdodvotAAAAAKrCgxcqj052S-XF-8G_olACPrZF" async defer></script>
+
+<!-- GSAP + ScrollTrigger + Lenis for Smooth Inertia Scrollytelling -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/lenis@1.1.18/dist/lenis.min.js"></script>
 
 <style>
 :root{
@@ -134,10 +139,7 @@
   --smooth:cubic-bezier(0.25, 0.8, 0.25, 1);
 }
 
-
-*, *:before, *:after{
-  box-sizing:border-box;
-}
+*, *:before, *:after{box-sizing:border-box}
 html{
   scroll-behavior:smooth;
   scroll-padding-top:76px;
@@ -157,7 +159,6 @@ body{
   background:var(--paper);
   line-height:1.55;
   -webkit-font-smoothing:antialiased;
-  touch-action:pan-y;
 }
 a{color:inherit}
 img, svg{max-width:100%;height:auto;vertical-align:middle}
@@ -169,12 +170,13 @@ img, svg{max-width:100%;height:auto;vertical-align:middle}
   max-width:100%;
 }
 
+/* Brand Wordmark & Image Logo (Assets JPG Aware) */
 .brand{display:inline-flex;align-items:center;gap:8px;text-decoration:none;flex-shrink:0}
 .brand-logo-img{height:30px;max-width:130px;object-fit:contain}
 .brand-wordmark{font-size:22px;font-weight:900;letter-spacing:-1.1px;color:var(--ink);white-space:nowrap;line-height:1.1}
 .brand-wordmark b{color:var(--teal)}
 
-
+/* Header & Nav */
 .top{
   position:sticky;
   top:0;
@@ -207,7 +209,7 @@ header{
 }
 .navlinks a:hover,.footer-links a:hover{color:var(--skyblue)}
 
-
+/* Mobile Menu */
 .mobile-menu-toggle{
   display:none;
   background:none;
@@ -219,8 +221,6 @@ header{
   cursor:pointer;
   line-height:1;
 }
-
-
 .mobile-drawer{
   display:none;
   position:fixed;
@@ -244,14 +244,8 @@ header{
   padding:8px 0;
   border-bottom:1px solid #f1f5f9;
 }
-.mobile-drawer-actions{
-  display:flex;
-  flex-direction:column;
-  gap:10px;
-  margin-top:6px;
-}
 
-
+/* Compact Buttons */
 .btn{
   display:inline-flex;
   align-items:center;
@@ -283,7 +277,7 @@ header{
 }
 .btn-whatsapp-top:hover{background:#20ba5a}
 
-
+/* Hero Section */
 .hero{
   position:relative;
   padding:72px 0 54px;
@@ -304,7 +298,6 @@ header{
   font-size:11.5px;
   font-weight:800;
   letter-spacing:.06em;
-  max-width:100%;
 }
 .dot{width:7px;height:7px;border-radius:50%;background:#e8a500;box-shadow:0 0 0 4px #ffcf5638;flex-shrink:0}
 h1{font-size:clamp(30px,4.5vw,54px);line-height:1.1;letter-spacing:-.045em;max-width:920px;margin:18px auto 14px;word-break:break-word}
@@ -317,7 +310,187 @@ h1 span{color:var(--teal)}
 .trustline{display:flex;gap:18px;justify-content:center;flex-wrap:wrap;color:#334155;font-size:12px;font-weight:650;margin-top:26px}
 .trustline span:before{content:"✓";color:var(--teal);font-weight:900;margin-right:6px}
 
+/* ===== SCROLLYTELLING 3D SHOWCASE SECTION (THE 8 MECHANICS) ===== */
+.scrolly-section{
+  position:relative;
+  height:360vh; /* Controlled scrub timeline */
+  background:#051323;
+  color:#fff;
+  width:100%;
+  overflow:visible;
+}
+.scrolly-pin-wrap{
+  position:sticky;
+  top:0;
+  height:100vh;
+  width:100%;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  overflow:hidden;
+  perspective:1200px;
+}
 
+/* 3. Kinetic Background Typography */
+.scrolly-bg-typo{
+  position:absolute;
+  font-size:clamp(64px,15vw,170px);
+  font-weight:950;
+  letter-spacing:-.06em;
+  color:rgba(255,255,255,0.06);
+  text-transform:uppercase;
+  user-select:none;
+  pointer-events:none;
+  white-space:nowrap;
+  z-index:1;
+  transform:translate(-50%, -50%);
+  top:50%;
+  left:50%;
+  will-change:transform, opacity, filter;
+}
+
+/* 1 & 5. 3D Assembly & Translation Rig */
+.scrolly-3d-stage{
+  position:relative;
+  z-index:5;
+  width:min(440px,88vw);
+  height:360px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  transform-style:preserve-3d;
+  will-change:transform;
+}
+
+/* Exploded Layers of the Platform Core */
+.core-layer-cap{
+  position:absolute;
+  width:220px;
+  height:65px;
+  border-radius:18px;
+  background:linear-gradient(135deg,#00f2fe,#00c48c);
+  border:1px solid rgba(255,255,255,0.5);
+  box-shadow:0 12px 30px rgba(0,242,254,0.35);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-size:12px;
+  font-weight:900;
+  color:#06182a;
+  letter-spacing:.05em;
+  top:30px;
+  will-change:transform;
+}
+.core-layer-mid{
+  position:absolute;
+  width:260px;
+  height:140px;
+  border-radius:24px;
+  background:linear-gradient(145deg,#0e2f4c,#091f35);
+  border:1px solid #1a4f7e;
+  box-shadow:0 20px 50px rgba(0,0,0,0.6);
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+  gap:6px;
+  top:110px;
+  will-change:transform;
+}
+.core-layer-mid span{font-size:18px;font-weight:900;color:#fff;letter-spacing:-.03em}
+.core-layer-mid small{font-size:11px;color:#00f2fe;font-weight:750;text-transform:uppercase;letter-spacing:.08em}
+.core-layer-base{
+  position:absolute;
+  width:240px;
+  height:50px;
+  border-radius:16px;
+  background:#071b2d;
+  border:1px solid #143d63;
+  box-shadow:0 10px 28px rgba(0,0,0,0.4);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-size:11px;
+  font-weight:800;
+  color:#64748b;
+  bottom:35px;
+  will-change:transform;
+}
+
+/* 6. Model Morph / Terminal State Swap Target */
+.core-swapped-view{
+  position:absolute;
+  inset:20px;
+  border-radius:22px;
+  background:linear-gradient(145deg,#041424,#0b2d49);
+  border:1px solid #00f2fe;
+  box-shadow:0 20px 60px rgba(0,242,254,0.22);
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+  padding:20px;
+  opacity:0;
+  pointer-events:none;
+  will-change:opacity, transform;
+}
+.core-swapped-view h4{margin:0 0 4px;font-size:17px;color:#00e5a3}
+.core-swapped-view p{margin:0;font-size:12px;color:#94a3b8;text-align:center}
+
+/* 4. Radial Pop-in Callout Badges */
+.radial-badge{
+  position:absolute;
+  background:#092138;
+  border:1px solid #1a4d7a;
+  border-radius:14px;
+  padding:10px 14px;
+  display:flex;
+  align-items:center;
+  gap:10px;
+  box-shadow:0 14px 35px rgba(0,0,0,0.5);
+  opacity:0;
+  transform:scale(0.5);
+  pointer-events:none;
+  will-change:transform, opacity;
+  z-index:6;
+}
+.radial-badge .rb-icon{width:30px;height:30px;border-radius:8px;background:#03425f;color:#00f2fe;display:grid;place-items:center;font-size:14px}
+.radial-badge strong{font-size:12px;color:#fff;display:block}
+.radial-badge span{font-size:10.5px;color:#94a3b8}
+
+.badge-pos-tl{top:15px;left:-60px}
+.badge-pos-tr{top:15px;right:-60px}
+.badge-pos-bl{bottom:25px;left:-60px}
+.badge-pos-br{bottom:25px;right:-60px}
+
+/* 7. Staggered Vertical Benefit Slide-In Cards (Left Rail) */
+.scrolly-left-content{
+  position:absolute;
+  left:calc((100% - 1180px)/2 + 20px);
+  width:min(440px,90vw);
+  display:flex;
+  flex-direction:column;
+  gap:12px;
+  z-index:8;
+  pointer-events:none;
+}
+.benefit-slide-card{
+  background:rgba(9,33,56,0.92);
+  backdrop-filter:blur(10px);
+  border:1px solid #163d63;
+  border-radius:14px;
+  padding:16px 18px;
+  display:flex;
+  gap:12px;
+  opacity:0;
+  transform:translateY(40px);
+  will-change:transform, opacity;
+}
+.benefit-slide-card .b-icon{width:32px;height:32px;border-radius:9px;background:#033d59;color:#00e5a3;display:grid;place-items:center;font-size:15px;flex-shrink:0}
+.benefit-slide-card h4{margin:0 0 3px;font-size:14px;color:#fff}
+.benefit-slide-card p{margin:0;font-size:11.5px;color:#94a3b8;line-height:1.5}
+
+/* Progressive Showcase Pipeline Flow Container */
 .flow-container{
   background:#051323;
   color:#fff;
@@ -327,14 +500,12 @@ h1 span{color:var(--teal)}
   box-shadow:0 24px 60px rgba(0,0,0,0.45);
   border:1px solid #143555;
   width:100%;
-  max-width:100%;
   box-sizing:border-box;
 }
 .flow-header{text-align:center;margin-bottom:24px}
 .flow-header h2{font-size:clamp(20px,2.8vw,32px);margin:0 0 8px;letter-spacing:-.03em}
 .flow-header h2 span{color:var(--teal)}
 .flow-header p{margin:0;color:#94a3b8;font-size:13px;max-width:640px;margin-inline:auto}
-
 
 .flow-stepper{
   display:flex;
@@ -393,11 +564,9 @@ h1 span{color:var(--teal)}
   flex-direction:column;
   justify-content:space-between;
   width:100%;
-  box-sizing:border-box;
 }
 .flow-module-box h3{margin:0 0 4px;font-size:16px;color:#fff;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:6px}
 .flow-module-box p.flow-sub{margin:0 0 14px;font-size:12px;color:#94a3b8}
-
 
 .gateway-selection-grid{
   display:grid;
@@ -418,11 +587,9 @@ h1 span{color:var(--teal)}
   color:#cbd5e1;
   cursor:pointer;
   transition:all .2s;
-  min-width:0;
 }
 .gateway-choice-card:hover{border-color:#00f2fe}
 .gateway-choice-card input{accent-color:#00c48c}
-
 
 .showcase-input{
   width:100%;
@@ -434,10 +601,8 @@ h1 span{color:var(--teal)}
   font-size:12.5px;
   margin-bottom:10px;
   outline:none;
-  box-sizing:border-box;
 }
 .showcase-input:focus{border-color:#00f2fe}
-
 
 .auth-providers-row{
   display:grid;
@@ -454,11 +619,9 @@ h1 span{color:var(--teal)}
   display:flex;
   align-items:center;
   gap:12px;
-  box-sizing:border-box;
 }
 .auth-provider-card h4{margin:0 0 2px;font-size:14.5px;color:#fff}
 .auth-provider-card p{margin:0;font-size:11px;color:#94a3b8}
-
 
 .pillars-grid{
   display:grid;
@@ -473,12 +636,10 @@ h1 span{color:var(--teal)}
   border-radius:12px;
   padding:14px;
   text-align:left;
-  box-sizing:border-box;
 }
 .pillar-icon{font-size:20px;margin-bottom:6px;color:#00f2fe}
 .pillar-card h4{margin:0 0 4px;font-size:14px;color:#fff}
 .pillar-card p{margin:0;font-size:11.5px;color:#94a3b8;line-height:1.5}
-
 
 .security-monitor-bar{
   background:#061626;
@@ -491,7 +652,6 @@ h1 span{color:var(--teal)}
   flex-wrap:wrap;
   gap:12px;
   width:100%;
-  box-sizing:border-box;
 }
 .sec-left{display:flex;align-items:center;gap:12px}
 .sec-shield{
@@ -520,7 +680,7 @@ h1 span{color:var(--teal)}
   white-space:nowrap;
 }
 
-
+/* Sections */
 .section{padding:64px 0;width:100%;max-width:100%;overflow-x:hidden}
 .section-white{background:#fff;border-block:1px solid var(--line)}
 .section-grey{background:var(--bg-grey);border-block:1px solid var(--bg-grey-border)}
@@ -529,7 +689,7 @@ h1 span{color:var(--teal)}
 .section h2{font-size:clamp(22px,3vw,34px);line-height:1.16;letter-spacing:-.03em;margin:0 0 10px}
 .sub{color:var(--muted);font-size:14px;margin:0}
 
-
+/* Cards & Grid */
 .grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;width:100%}
 .card{
   background:#fff;
@@ -541,7 +701,6 @@ h1 span{color:var(--teal)}
   display:flex;
   flex-direction:column;
   justify-content:space-between;
-  box-sizing:border-box;
 }
 .card:hover{transform:translateY(-3px);border-color:#38bdf8;box-shadow:var(--shadow)}
 .icon{width:40px;height:40px;border-radius:11px;background:#e6fbf4;color:#009a6a;display:grid;place-items:center;font-size:19px;margin-bottom:14px;flex-shrink:0}
@@ -549,7 +708,7 @@ h1 span{color:var(--teal)}
 .card p{font-size:12.5px;color:var(--muted);line-height:1.6;margin:0}
 .text-link{display:inline-flex;margin-top:12px;text-decoration:none;color:var(--skyblue);font-size:12px;font-weight:800}
 
-
+/* Feature Layout */
 .feature-layout{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;align-items:stretch;width:100%}
 .feature-panel{
   border-radius:18px;
@@ -558,7 +717,6 @@ h1 span{color:var(--teal)}
   padding:24px;
   position:relative;
   overflow:hidden;
-  box-sizing:border-box;
 }
 .feature-panel h3{font-size:22px;line-height:1.22;max-width:400px;margin:0 0 10px}
 .feature-panel p{color:#e0f2fe;max-width:400px;font-size:13px;line-height:1.65}
@@ -581,13 +739,12 @@ h1 span{color:var(--teal)}
   background:#fff;
   border:1px solid var(--line);
   border-radius:14px;
-  box-sizing:border-box;
 }
 .check{flex:0 0 24px;width:24px;height:24px;border-radius:99px;background:#e0f2fe;color:var(--skyblue);display:grid;place-items:center;font-weight:900;font-size:12px}
 .feature-row h3{font-size:14px;margin:0 0 3px}
 .feature-row p{font-size:12px;color:var(--muted);margin:0;line-height:1.5}
 
-
+/* Hosting Features Grid */
 .hosting-features-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;margin-top:10px;width:100%}
 .host-feature-item{
   background:#fff;
@@ -595,13 +752,12 @@ h1 span{color:var(--teal)}
   border-radius:14px;
   padding:18px;
   transition:all .2s;
-  box-sizing:border-box;
 }
 .host-feature-item:hover{transform:translateY(-3px);border-color:#38bdf8;box-shadow:var(--shadow)}
 .host-feature-item h4{margin:0 0 4px;font-size:14.5px;color:#0f172a}
 .host-feature-item p{margin:0;font-size:12px;color:var(--muted);line-height:1.55}
 
-
+/* Frameworks Grid */
 .framework-suite{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;margin-top:20px;width:100%}
 .framework-card{
   background:#fff;
@@ -612,7 +768,6 @@ h1 span{color:var(--teal)}
   display:flex;
   flex-direction:column;
   justify-content:space-between;
-  box-sizing:border-box;
 }
 .framework-card .badge{
   display:inline-block;
@@ -628,9 +783,9 @@ h1 span{color:var(--teal)}
 .framework-card h3{margin:0 0 4px;font-size:14.5px;color:#0f172a}
 .framework-card p{margin:0;font-size:12px;color:var(--muted);line-height:1.5}
 
-
+/* Steps */
 .steps{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;counter-reset:steps;width:100%}
-.step{padding:18px;background:#fff;border:1px solid var(--line);border-radius:14px;box-sizing:border-box}
+.step{padding:18px;background:#fff;border:1px solid var(--line);border-radius:14px}
 .step:before{
   counter-increment:steps;
   content:"0" counter(steps);
@@ -644,7 +799,7 @@ h1 span{color:var(--teal)}
 .step h3{margin:0 0 4px;font-size:15px}
 .step p{margin:0;color:var(--muted);font-size:12.5px;line-height:1.6}
 
-
+/* CTA */
 .cta{
   margin:0 0 54px;
   background:linear-gradient(125deg,var(--seablue-deep) 0%,var(--seablue) 60%,#0369a1 100%);
@@ -655,7 +810,6 @@ h1 span{color:var(--teal)}
   position:relative;
   overflow:hidden;
   width:100%;
-  box-sizing:border-box;
 }
 .cta h2{font-size:clamp(22px,3.2vw,34px);margin:0 0 8px}
 .cta p{color:#e0f2fe;max-width:620px;margin:0 auto 18px;font-size:13.5px;line-height:1.65}
@@ -685,9 +839,9 @@ h1 span{color:var(--teal)}
 .faq-item.active .faq-content{max-height:220px;padding-bottom:14px}
 
 /* User Inquiry Box */
-.inquiry-panel{max-width:860px;margin:0 auto;background:#092138;border:1px solid #173d63;border-radius:16px;padding:20px;color:#fff;width:100%;box-sizing:border-box}
+.inquiry-panel{max-width:860px;margin:0 auto;background:#092138;border:1px solid #173d63;border-radius:16px;padding:20px;color:#fff;width:100%}
 .inquiry-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;margin-top:12px;width:100%}
-.inquiry-textarea{grid-column:1 / -1;width:100%;padding:10px 12px;background:#061727;border:1px solid #163654;border-radius:10px;color:#fff;font-size:12.5px;min-height:75px;resize:vertical;box-sizing:border-box}
+.inquiry-textarea{grid-column:1 / -1;width:100%;padding:10px 12px;background:#061727;border:1px solid #163654;border-radius:10px;color:#fff;font-size:12.5px;min-height:75px;resize:vertical}
 
 /* Trust Ribbon */
 .trust-ribbon{background:#051323;border-top:1px solid #143555;border-bottom:1px solid #143555;padding:16px 0;color:#e2e8f0;width:100%}
@@ -714,7 +868,7 @@ h1 span{color:var(--teal)}
 .marquee-item{height:46px;min-width:115px;background:#0f2133;border:1px solid #1a3854;border-radius:9px;display:flex;align-items:center;justify-content:center;padding:6px 12px;color:#cbd5e1;font-size:12px;font-weight:750;white-space:nowrap}
 .marquee-item img{max-height:22px;max-width:85px;object-fit:contain}
 
-/* Footer */
+/* Footer (Using assets/*.jpg) */
 .footer{background:#071524;color:#c8d3df;padding:44px 0 20px;width:100%}
 .footer-top{display:grid;grid-template-columns:1.2fr 2.8fr;gap:32px;padding-bottom:26px;border-bottom:1px solid #ffffff12;width:100%}
 .footer-brand p{font-size:12px;line-height:1.7;color:#94a3b8;max-width:300px}
@@ -727,6 +881,7 @@ h1 span{color:var(--teal)}
 .footer-mid-row{display:grid;grid-template-columns:1fr 1.2fr 0.8fr;gap:24px;padding:24px 0 20px;border-bottom:1px solid #ffffff12;align-items:center;width:100%}
 .social-icons-tray{display:flex;gap:8px;margin-top:10px;flex-wrap:wrap}
 .social-icon-btn{width:28px;height:28px;border-radius:50%;background:#0e2439;border:1px solid #183e63;display:grid;place-items:center;color:#cbd5e1;text-decoration:none;font-size:11px}
+.social-icon-btn img{width:14px;height:14px;object-fit:contain}
 .newsletter-form{display:flex;gap:6px;margin-top:8px;width:100%}
 .newsletter-form input{flex:1;min-width:0;padding:8px 11px;background:#092138;border:1px solid #173d63;border-radius:8px;color:#fff;font-size:12px;outline:none}
 .newsletter-form button{padding:8px 14px;background:#0284c7;color:#fff;border:none;border-radius:8px;font-weight:750;font-size:12px;cursor:pointer;white-space:nowrap}
@@ -734,6 +889,7 @@ h1 span{color:var(--teal)}
 .app-badge-btn{background:#092138;border:1px solid #173d63;border-radius:8px;padding:5px 10px;color:#fff;font-size:10px;text-decoration:none;white-space:nowrap}
 .accepted-payments-strip{display:flex;flex-wrap:wrap;gap:8px;margin-top:8px}
 .pay-pill{height:26px;padding:3px 8px;background:#092138;border:1px solid #173d63;border-radius:6px;display:flex;align-items:center;font-size:10.5px;font-weight:800;color:#e2e8f0;white-space:nowrap}
+.pay-pill img{max-height:16px;max-width:40px;object-fit:contain}
 .footer-bottom{display:flex;justify-content:space-between;gap:14px;align-items:center;flex-wrap:wrap;padding-top:18px;font-size:11.5px;color:#8596ac;width:100%}
 .footer-bottom a{color:#dce5ee;text-decoration:none}
 
@@ -743,6 +899,7 @@ h1 span{color:var(--teal)}
 .whatsapp-float:hover .whatsapp-bubble{display:block}
 .whatsapp-btn{width:46px;height:46px;border-radius:50%;background:#25d366;color:#fff;display:grid;place-items:center;font-size:22px;box-shadow:0 8px 20px rgba(37,211,102,0.4);transition:transform .2s var(--spring)}
 .whatsapp-btn:hover{transform:scale(1.08)}
+.whatsapp-btn img{width:26px;height:26px;object-fit:contain}
 
 /* Auth Modal Styles */
 .auth-overlay{position:fixed;inset:0;background:rgba(3,10,18,0.85);backdrop-filter:blur(12px);z-index:100;display:none;align-items:center;justify-content:center;padding:16px;overflow-y:auto}
@@ -868,7 +1025,7 @@ h1 span{color:var(--teal)}
 .d-bottom-tile{background:#fff;border:1px solid #e5e9f0;border-radius:9px;padding:9px 10px;font-size:10px;display:flex;flex-direction:column;gap:2px}
 .d-bottom-tile strong{font-size:11px;color:#0f172a}
 
-/* In-Development Advisory Modal */
+/* In-Development Modal */
 .dev-modal-overlay{position:fixed;inset:0;background:rgba(10,25,38,0.7);backdrop-filter:blur(5px);z-index:150;display:none;align-items:center;justify-content:center;padding:16px}
 .dev-modal-overlay.show{display:flex}
 .dev-modal{background:#fff;border-radius:16px;width:min(380px,100%);padding:22px 20px;text-align:center;box-shadow:0 16px 45px rgba(0,0,0,0.25)}
@@ -876,47 +1033,6 @@ h1 span{color:var(--teal)}
 .dev-modal h3{margin:0 0 6px;font-size:16px}
 .dev-modal p{margin:0 0 16px;font-size:12.5px;color:var(--muted);line-height:1.55}
 .dev-modal .btn-close-dev{width:100%;padding:9px;background:#0284c7;color:#fff;border:none;border-radius:8px;font-weight:750;font-size:12.5px;cursor:pointer}
-
-/* Responsive Breakpoints & Viewport Protections */
-@media(max-width:960px){
-  .navlinks{display:none}
-  .mobile-menu-toggle{display:block}
-  .top .btn-gold{display:none}
-  .d-shell{grid-template-columns:1fr}
-  .d-sidebar{display:none}
-  .d-stats-4{grid-template-columns:repeat(2,minmax(0,1fr))}
-  .d-middle-grid,.d-lower-grid{grid-template-columns:1fr}
-  .d-bottom-row{grid-template-columns:repeat(3,minmax(0,1fr))}
-  .flow-modules-grid{grid-template-columns:1fr}
-  .pillars-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
-  .trust-ribbon-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
-  .footer-mid-row{grid-template-columns:1fr}
-  .footer-top{grid-template-columns:1fr}
-}
-@media(max-width:768px){
-  .auth-body-split{grid-template-columns:1fr}
-  .auth-side-perks{display:none}
-  .auth-providers-row{grid-template-columns:1fr}
-  .grid,.feature-layout,.steps,.hosting-features-grid,.framework-suite{grid-template-columns:1fr}
-  .inquiry-grid{grid-template-columns:1fr}
-  .footer-columns{grid-template-columns:repeat(2,minmax(0,1fr))}
-}
-@media(max-width:480px){
-  .wrap{width:calc(100% - 24px)}
-  .header{min-height:60px}
-  .d-stats-4{grid-template-columns:1fr}
-  .d-charts-split{grid-template-columns:1fr}
-  .d-bottom-row{grid-template-columns:repeat(2,minmax(0,1fr))}
-  .pillars-grid{grid-template-columns:1fr}
-  .trust-ribbon-grid{grid-template-columns:1fr}
-  .gateway-selection-grid{grid-template-columns:1fr}
-  .phone-box-worldwide{grid-template-columns:1fr}
-  .footer-columns{grid-template-columns:1fr}
-  .flow-stepper{flex-direction:column;gap:6px}
-  .flow-step-divider{display:none}
-  .hero{padding:54px 0 42px}
-  .btn{padding:8px 12px;font-size:12px}
-}
 </style>
 </head>
 <body>
@@ -926,11 +1042,10 @@ h1 span{color:var(--teal)}
   <div class="top">
     <header class="wrap">
       <a class="brand" href="index.html" aria-label="EsselTen home">
-        <img src="assets/logo.svg" alt="EsselTen" class="brand-logo-img" onload="this.nextElementSibling.style.display='none'" onerror="this.style.display='none';this.nextElementSibling.style.display='inline-block'">
+        <img src="assets/logo.jpg" alt="EsselTen" class="brand-logo-img" onload="this.nextElementSibling.style.display='none'" onerror="this.style.display='none';this.nextElementSibling.style.display='inline-block'">
         <span class="brand-wordmark" aria-label="EsselTen">Essel<b>Ten</b></span>
       </a>
 
-      <!-- Desktop Links -->
       <nav class="navlinks" aria-label="Main navigation">
         <a href="#features">Features</a>
         <a href="#web2app">Web2App</a>
@@ -939,10 +1054,9 @@ h1 span{color:var(--teal)}
         <a href="#integrations">Integrations</a>
       </nav>
 
-      <!-- Action Cluster -->
       <div class="nav">
         <a class="btn btn-whatsapp-top" href="https://wa.me/233202186264?text=Hello%20EsselTen%2C%20I%20would%20like%20to%20inquire%20about%20your%20services" target="_blank" rel="noopener noreferrer">
-          <img src="assets/whatsapp.svg" alt="" style="width:14px;height:14px" onerror="this.style.display='none'"> WhatsApp
+          <img src="assets/whatsapp.jpg" alt="" style="width:14px;height:14px" onerror="this.style.display='none'"> WhatsApp
         </a>
         <a class="btn btn-light auth-open-signin" href="#signin">Sign In</a>
         <a class="btn btn-gold auth-open-signup" href="#signup">Join the Waitlist &rarr;</a>
@@ -950,7 +1064,6 @@ h1 span{color:var(--teal)}
       </div>
     </header>
 
-    <!-- Mobile Drawer Navigation -->
     <div class="mobile-drawer" id="mobile-nav-drawer">
       <a href="#features" onclick="toggleMobileNav()">Features</a>
       <a href="#web2app" onclick="toggleMobileNav()">Web2App</a>
@@ -981,149 +1094,234 @@ h1 span{color:var(--teal)}
           <span>Scalable Multi-Tenant Architecture</span>
           <span>Fast Access and Account Verification</span>
         </div>
+      </div>
+    </section>
 
-        <!-- ===== SEPARATE ONBOARDING & PAYMENT PROGRESSION FLOW ===== -->
-        <div class="flow-container">
-          <div class="flow-header">
-            <h2>EsselTen &ndash; <span>Payments, Domains, Hosting &amp; Email</span></h2>
-            <p>Integrate EsselTen into your website or app. Follow the progressive flow: verify your credentials first, then unlock multi-gateway payment routing worldwide.</p>
-          </div>
+    <!-- ===== SCROLLYTELLING 3D PRODUCT SHOWCASE SECTION ===== -->
+    <section class="scrolly-section" id="scrollytelling-showcase" aria-label="EsselTen 3D Architecture Assembly Showcase">
+      <div class="scrolly-pin-wrap">
+        <!-- 3. Kinetic Background Typography Fade & Scale -->
+        <div class="scrolly-bg-typo" id="scrolly-typo">ESSELTEN</div>
 
-          <!-- Stepper Indicator -->
-          <div class="flow-stepper">
-            <div class="flow-step-node active" id="flow-node-step1" onclick="switchFlowStep(1)">
-              <span class="step-num">1</span>
-              <span>Identity &amp; Account Provisioning</span>
-            </div>
-            <div class="flow-step-divider"></div>
-            <div class="flow-step-node" id="flow-node-step2" onclick="switchFlowStep(2)">
-              <span class="step-num">2</span>
-              <span>Payment Routing &amp; Checkout Flow</span>
+        <!-- 7. Staggered Vertical Card Slide-In (Left Rail) -->
+        <div class="scrolly-left-content" id="scrolly-benefits">
+          <div class="benefit-slide-card" id="b-card-1">
+            <div class="b-icon">⚡</div>
+            <div>
+              <h4>Turnkey Web2App Compiler</h4>
+              <p>Converts web assets into production-signed native mobile application packages.</p>
             </div>
           </div>
-
-          <!-- 2 Distinct Progressive Modules -->
-          <div class="flow-modules-grid">
-            <!-- Stage 1: Identity & Credentials -->
-            <div class="flow-module-box" id="flow-card-stage1">
-              <div>
-                <h3>
-                  <span>Stage 1: Identity &amp; Workspaces</span>
-                  <span style="font-size:11px;color:#00f2fe;font-weight:700">Firebase Powered</span>
-                </h3>
-                <p class="flow-sub">Register an account or sign in to establish your isolated multi-tenant workspace before connecting payment channels.</p>
-                <div style="display:grid;gap:8px">
-                  <input type="text" class="showcase-input" placeholder="Full name (e.g. Alex Morgan)">
-                  <input type="email" class="showcase-input" placeholder="you@example.com">
-                  <input type="password" class="showcase-input" placeholder="•••••••• (Security pass)">
-                </div>
-              </div>
-              <div>
-                <button type="button" class="btn btn-teal" style="width:100%;padding:11px;margin-top:14px" onclick="openAuthModal('register')">
-                  Verify Credentials &rarr;
-                </button>
-                <p style="font-size:11px;color:#64748b;margin:8px 0 0;text-align:center">
-                  Instant token handshake via Google Firebase &amp; Supabase
-                </p>
-              </div>
-            </div>
-
-            <!-- Stage 2: Payment Gateways & Global Routing -->
-            <div class="flow-module-box" id="flow-card-stage2">
-              <div>
-                <h3>
-                  <span>Stage 2: Payment Flow</span>
-                  <span style="font-size:11px;color:#10b981;font-weight:700">PCI DSS Ready</span>
-                </h3>
-                <p class="flow-sub">Activated immediately following successful registration. Select your preferred channel to process global transactions.</p>
-                <input type="number" class="showcase-input" placeholder="Enter amount to process (e.g. 50.00)" min="1" step="any">
-                
-                <div class="gateway-selection-grid">
-                  <label class="gateway-choice-card"><input type="radio" name="gw_sel" checked> Stripe <span>💳</span></label>
-                  <label class="gateway-choice-card"><input type="radio" name="gw_sel"> PayPal <span>🅿️</span></label>
-                  <label class="gateway-choice-card"><input type="radio" name="gw_sel"> Square <span>⬛</span></label>
-                  <label class="gateway-choice-card"><input type="radio" name="gw_sel"> Razorpay <span>🇮🇳</span></label>
-                  <label class="gateway-choice-card"><input type="radio" name="gw_sel"> Flutterwave <span>🌍</span></label>
-                  <label class="gateway-choice-card"><input type="radio" name="gw_sel"> Apple Pay <span>🍏</span></label>
-                  <label class="gateway-choice-card"><input type="radio" name="gw_sel"> Google Pay <span>🌐</span></label>
-                  <label class="gateway-choice-card"><input type="radio" name="gw_sel"> Visa / Mastercard <span>💳</span></label>
-                </div>
-              </div>
-              <div>
-                <button type="button" class="btn btn-light" style="width:100%;padding:11px;border-color:#0284c7;color:#0284c7" onclick="triggerInDevAdvisory()">
-                  🔒 Complete Payment Pipeline
-                </button>
-                <p style="font-size:11px;color:#64748b;margin:8px 0 0;text-align:center">
-                  Protected by 256-bit encryption and tokenized webhooks
-                </p>
-              </div>
+          <div class="benefit-slide-card" id="b-card-2">
+            <div class="b-icon">🛡️</div>
+            <div>
+              <h4>Sub-Millisecond WireGuard Tunnel</h4>
+              <p>Hardware-accelerated cryptographic VPN nodes and network proxy daemons.</p>
             </div>
           </div>
-
-          <!-- Authentication Providers Ribbon -->
-          <div style="font-size:11.5px;font-weight:800;text-transform:uppercase;letter-spacing:.08em;color:#00f2fe;text-align:center;margin-bottom:10px">
-            Authentication Providers
-          </div>
-          <div class="auth-providers-row">
-            <div class="auth-provider-card">
-              <span style="font-size:26px">🔥</span>
-              <div>
-                <h4>Firebase</h4>
-                <p>Secure registration, OAuth identity and token validation powered by Google Firebase.</p>
-              </div>
-            </div>
-            <div class="auth-provider-card">
-              <span style="font-size:26px">⚡</span>
-              <div>
-                <h4>Supabase</h4>
-                <p>Row-level security, edge functions, and real-time database architecture.</p>
-              </div>
+          <div class="benefit-slide-card" id="b-card-3">
+            <div class="b-icon">🖥️</div>
+            <div>
+              <h4>CloudLinux CageFS Isolation</h4>
+              <p>High-security isolated SSD cPanel clusters with instant multi-PHP runtime engines.</p>
             </div>
           </div>
-
-          <!-- 4 Platform Pillars -->
-          <div class="pillars-grid">
-            <div class="pillar-card">
-              <div class="pillar-icon">💳</div>
-              <h4>Payments</h4>
-              <p>Flexible and secure payments for your business. Accept local and global methods worldwide.</p>
-            </div>
-            <div class="pillar-card">
-              <div class="pillar-icon">🌐</div>
-              <h4>Domains</h4>
-              <p>Search, register, and manage premium domains with ease. Trusted, scalable, and reliable.</p>
-            </div>
-            <div class="pillar-card">
-              <div class="pillar-icon">🖥️</div>
-              <h4>Hosting</h4>
-              <p>Fast, secure, and scalable cloud hosting for all your websites, microservices, and applications.</p>
-            </div>
-            <div class="pillar-card">
-              <div class="pillar-icon">✉️</div>
-              <h4>Professional Email</h4>
-              <p>Custom domain email addresses that build trust, enhance deliverability, and strengthen your brand.</p>
+          <div class="benefit-slide-card" id="b-card-4">
+            <div class="b-icon">💳</div>
+            <div>
+              <h4>Unified Multi-Currency Gateway</h4>
+              <p>Connect and orchestrate transactions across local and global checkout pipelines.</p>
             </div>
           </div>
+        </div>
 
-          <!-- 24/7 Continuous Security Ribbon -->
-          <div class="security-monitor-bar">
-            <div class="sec-left">
-              <div class="sec-shield">🛡️</div>
-              <div class="sec-text">
-                <strong>Full 24/7 Security Monitoring</strong>
-                <span>EsselTen, Domains, Hosting and Professional Email are protected by continuous PCI DSS Security monitoring.</span>
-              </div>
-            </div>
-            <div class="sec-pills">
-              <span class="sec-pill-tag">✓ Payments</span>
-              <span class="sec-pill-tag">✓ Domains</span>
-              <span class="sec-pill-tag">✓ Hosting</span>
-              <span class="sec-pill-tag">✓ Professional Email</span>
-            </div>
+        <!-- 1 & 5. 3D Assembly & Translation Rig -->
+        <div class="scrolly-3d-stage" id="scrolly-stage">
+          <!-- Floating Exploded Layers -->
+          <div class="core-layer-cap" id="layer-cap">
+            <span>WEB2APP APPLICATION SHELL</span>
+          </div>
+
+          <div class="core-layer-mid" id="layer-mid">
+            <span>ESSELTEN CORE</span>
+            <small>ENTERPRISE ENGINE MATRIX</small>
+          </div>
+
+          <div class="core-layer-base" id="layer-base">
+            <span>SECURE KERNEL &amp; CIPHER FOUNDATION</span>
+          </div>
+
+          <!-- 4. Radial Pop-In Callout Badges -->
+          <div class="radial-badge badge-pos-tl" id="r-badge-1">
+            <div class="rb-icon">📱</div>
+            <div><strong>Web2App</strong><span>Native Binaries</span></div>
+          </div>
+
+          <div class="radial-badge badge-pos-tr" id="r-badge-2">
+            <div class="rb-icon">🛡️</div>
+            <div><strong>WireGuard</strong><span>Encrypted Mesh</span></div>
+          </div>
+
+          <div class="radial-badge badge-pos-bl" id="r-badge-3">
+            <div class="rb-icon">🖥️</div>
+            <div><strong>CageFS</strong><span>SSD Cloud Clusters</span></div>
+          </div>
+
+          <div class="radial-badge badge-pos-br" id="r-badge-4">
+            <div class="rb-icon">💳</div>
+            <div><strong>Checkout</strong><span>Multi-Gateway</span></div>
+          </div>
+
+          <!-- 6. Seamless Asset / State Swap Target -->
+          <div class="core-swapped-view" id="core-swapped">
+            <div style="font-size:28px;margin-bottom:8px">🚀</div>
+            <h4>Active Production Node</h4>
+            <p>Ready for turnkey multi-tenant deployment, automated builds, and real-time workflows.</p>
           </div>
         </div>
       </div>
     </section>
+
+    <!-- ===== SEPARATE ONBOARDING & PAYMENT PROGRESSION FLOW ===== -->
+    <div class="wrap">
+      <div class="flow-container">
+        <div class="flow-header">
+          <h2>EsselTen &ndash; <span>Payments, Domains, Hosting &amp; Email</span></h2>
+          <p>Integrate EsselTen into your website or app. Follow the progressive flow: verify your credentials first, then unlock multi-gateway payment routing worldwide.</p>
+        </div>
+
+        <div class="flow-stepper">
+          <div class="flow-step-node active" id="flow-node-step1" onclick="switchFlowStep(1)">
+            <span class="step-num">1</span>
+            <span>Identity &amp; Account Provisioning</span>
+          </div>
+          <div class="flow-step-divider"></div>
+          <div class="flow-step-node" id="flow-node-step2" onclick="switchFlowStep(2)">
+            <span class="step-num">2</span>
+            <span>Payment Routing &amp; Checkout Flow</span>
+          </div>
+        </div>
+
+        <div class="flow-modules-grid">
+          <!-- Stage 1 -->
+          <div class="flow-module-box" id="flow-card-stage1">
+            <div>
+              <h3>
+                <span>Stage 1: Identity &amp; Workspaces</span>
+                <span style="font-size:11px;color:#00f2fe;font-weight:700">Firebase Powered</span>
+              </h3>
+              <p class="flow-sub">Register an account or sign in to establish your isolated multi-tenant workspace before connecting payment channels.</p>
+              <div style="display:grid;gap:8px">
+                <input type="text" class="showcase-input" placeholder="Full name (e.g. Alex Morgan)">
+                <input type="email" class="showcase-input" placeholder="you@example.com">
+                <input type="password" class="showcase-input" placeholder="•••••••• (Security pass)">
+              </div>
+            </div>
+            <div>
+              <button type="button" class="btn btn-teal" style="width:100%;padding:11px;margin-top:14px" onclick="openAuthModal('register')">
+                Verify Credentials &rarr;
+              </button>
+              <p style="font-size:11px;color:#64748b;margin:8px 0 0;text-align:center">
+                Instant token handshake via Google Firebase &amp; Supabase
+              </p>
+            </div>
+          </div>
+
+          <!-- Stage 2 -->
+          <div class="flow-module-box" id="flow-card-stage2">
+            <div>
+              <h3>
+                <span>Stage 2: Payment Flow</span>
+                <span style="font-size:11px;color:#10b981;font-weight:700">PCI DSS Ready</span>
+              </h3>
+              <p class="flow-sub">Activated immediately following successful registration. Select your preferred channel to process global transactions.</p>
+              <input type="number" class="showcase-input" placeholder="Enter amount to process (e.g. 50.00)" min="1" step="any">
+              
+              <div class="gateway-selection-grid">
+                <label class="gateway-choice-card"><input type="radio" name="gw_sel" checked> Stripe <span>💳</span></label>
+                <label class="gateway-choice-card"><input type="radio" name="gw_sel"> PayPal <span>🅿️</span></label>
+                <label class="gateway-choice-card"><input type="radio" name="gw_sel"> Square <span>⬛</span></label>
+                <label class="gateway-choice-card"><input type="radio" name="gw_sel"> Razorpay <span>🇮🇳</span></label>
+                <label class="gateway-choice-card"><input type="radio" name="gw_sel"> Flutterwave <span>🌍</span></label>
+                <label class="gateway-choice-card"><input type="radio" name="gw_sel"> Apple Pay <span>🍏</span></label>
+                <label class="gateway-choice-card"><input type="radio" name="gw_sel"> Google Pay <span>🌐</span></label>
+                <label class="gateway-choice-card"><input type="radio" name="gw_sel"> Visa / Mastercard <span>💳</span></label>
+              </div>
+            </div>
+            <div>
+              <button type="button" class="btn btn-light" style="width:100%;padding:11px;border-color:#0284c7;color:#0284c7" onclick="triggerInDevAdvisory()">
+                🔒 Complete Payment Pipeline
+              </button>
+              <p style="font-size:11px;color:#64748b;margin:8px 0 0;text-align:center">
+                Protected by 256-bit encryption and tokenized webhooks
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Authentication Providers Ribbon -->
+        <div style="font-size:11.5px;font-weight:800;text-transform:uppercase;letter-spacing:.08em;color:#00f2fe;text-align:center;margin-bottom:10px">
+          Authentication Providers
+        </div>
+        <div class="auth-providers-row">
+          <div class="auth-provider-card">
+            <span style="font-size:26px">🔥</span>
+            <div>
+              <h4>Firebase</h4>
+              <p>Secure registration, OAuth identity and token validation powered by Google Firebase.</p>
+            </div>
+          </div>
+          <div class="auth-provider-card">
+            <span style="font-size:26px">⚡</span>
+            <div>
+              <h4>Supabase</h4>
+              <p>Row-level security, edge functions, and real-time database architecture.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- 4 Platform Pillars -->
+        <div class="pillars-grid">
+          <div class="pillar-card">
+            <div class="pillar-icon">💳</div>
+            <h4>Payments</h4>
+            <p>Flexible and secure payments for your business. Accept local and global methods worldwide.</p>
+          </div>
+          <div class="pillar-card">
+            <div class="pillar-icon">🌐</div>
+            <h4>Domains</h4>
+            <p>Search, register, and manage premium domains with ease. Trusted, scalable, and reliable.</p>
+          </div>
+          <div class="pillar-card">
+            <div class="pillar-icon">🖥️</div>
+            <h4>Hosting</h4>
+            <p>Fast, secure, and scalable cloud hosting for all your websites, microservices, and applications.</p>
+          </div>
+          <div class="pillar-card">
+            <div class="pillar-icon">✉️</div>
+            <h4>Professional Email</h4>
+            <p>Custom domain email addresses that build trust, enhance deliverability, and strengthen your brand.</p>
+          </div>
+        </div>
+
+        <!-- 24/7 Security Ribbon -->
+        <div class="security-monitor-bar">
+          <div class="sec-left">
+            <div class="sec-shield">🛡️</div>
+            <div class="sec-text">
+              <strong>Full 24/7 Security Monitoring</strong>
+              <span>EsselTen, Domains, Hosting and Professional Email are protected by continuous PCI DSS Security monitoring.</span>
+            </div>
+          </div>
+          <div class="sec-pills">
+            <span class="sec-pill-tag">✓ Payments</span>
+            <span class="sec-pill-tag">✓ Domains</span>
+            <span class="sec-pill-tag">✓ Hosting</span>
+            <span class="sec-pill-tag">✓ Professional Email</span>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <!-- PLATFORM FEATURES SECTION -->
     <section class="section section-grey" id="features" aria-labelledby="features-heading">
@@ -1395,7 +1593,7 @@ h1 span{color:var(--teal)}
               <p style="margin:0;font-size:12.5px;color:#94a3b8">Inquiries are logged to your account dashboard and replied to directly via email or WhatsApp.</p>
             </div>
             <a class="btn btn-whatsapp-top" href="https://wa.me/233202186264?text=Hello%20EsselTen%20Support%2C%20I%20have%20a%20question" target="_blank" rel="noopener noreferrer">
-              <img src="assets/whatsapp.svg" alt="" style="width:14px;height:14px" onerror="this.style.display='none'"> Chat on WhatsApp
+              <img src="assets/whatsapp.jpg" alt="" style="width:14px;height:14px" onerror="this.style.display='none'"> Chat on WhatsApp
             </a>
           </div>
 
@@ -1550,71 +1748,71 @@ h1 span{color:var(--teal)}
     </div>
   </div>
 
-  <!-- FOOTER -->
+  <!-- FOOTER (Using assets/*.jpg) -->
   <footer class="footer" id="about-esselten" aria-label="Footer">
     <div class="wrap">
       <!-- Infinite Sliding Logo Marquee -->
       <div class="marquee-wrapper" aria-label="Supported Integrations and Technology Partners">
         <div class="marquee-track">
-          <div class="marquee-item"><img src="assets/stripe.svg" alt="Stripe" onerror="this.style.display='none'"><span>Stripe</span></div>
-          <div class="marquee-item"><img src="assets/paypal.svg" alt="PayPal" onerror="this.style.display='none'"><span>PayPal</span></div>
-          <div class="marquee-item"><img src="assets/square.svg" alt="Square" onerror="this.style.display='none'"><span>Square</span></div>
-          <div class="marquee-item"><img src="assets/razorpay.svg" alt="Razorpay" onerror="this.style.display='none'"><span>Razorpay</span></div>
-          <div class="marquee-item"><img src="assets/flutterwave.svg" alt="Flutterwave" onerror="this.style.display='none'"><span>Flutterwave</span></div>
-          <div class="marquee-item"><img src="assets/apple-pay.svg" alt="Apple Pay" onerror="this.style.display='none'"><span>Apple Pay</span></div>
-          <div class="marquee-item"><img src="assets/google-pay.svg" alt="Google Pay" onerror="this.style.display='none'"><span>Google Pay</span></div>
-          <div class="marquee-item"><img src="assets/visa.svg" alt="Visa" onerror="this.style.display='none'"><span>Visa</span></div>
-          <div class="marquee-item"><img src="assets/mastercard.svg" alt="Mastercard" onerror="this.style.display='none'"><span>Mastercard</span></div>
-          <div class="marquee-item"><img src="assets/dci.svg" alt="DCI Security" onerror="this.style.display='none'"><span>DCI Certified</span></div>
-          <div class="marquee-item"><img src="assets/ssl.svg" alt="SSL 256" onerror="this.style.display='none'"><span>SSL Secure</span></div>
-          <div class="marquee-item"><img src="assets/cloudflare.svg" alt="Cloudflare" onerror="this.style.display='none'"><span>Cloudflare</span></div>
-          <div class="marquee-item"><img src="assets/aws.svg" alt="AWS" onerror="this.style.display='none'"><span>AWS</span></div>
+          <div class="marquee-item"><img src="assets/stripe.jpg" alt="Stripe" onerror="this.style.display='none'"><span>Stripe</span></div>
+          <div class="marquee-item"><img src="assets/paypal.jpg" alt="PayPal" onerror="this.style.display='none'"><span>PayPal</span></div>
+          <div class="marquee-item"><img src="assets/square.jpg" alt="Square" onerror="this.style.display='none'"><span>Square</span></div>
+          <div class="marquee-item"><img src="assets/razorpay.jpg" alt="Razorpay" onerror="this.style.display='none'"><span>Razorpay</span></div>
+          <div class="marquee-item"><img src="assets/flutterwave.jpg" alt="Flutterwave" onerror="this.style.display='none'"><span>Flutterwave</span></div>
+          <div class="marquee-item"><img src="assets/apple-pay.jpg" alt="Apple Pay" onerror="this.style.display='none'"><span>Apple Pay</span></div>
+          <div class="marquee-item"><img src="assets/google-pay.jpg" alt="Google Pay" onerror="this.style.display='none'"><span>Google Pay</span></div>
+          <div class="marquee-item"><img src="assets/visa.jpg" alt="Visa" onerror="this.style.display='none'"><span>Visa</span></div>
+          <div class="marquee-item"><img src="assets/mastercard.jpg" alt="Mastercard" onerror="this.style.display='none'"><span>Mastercard</span></div>
+          <div class="marquee-item"><img src="assets/dci.jpg" alt="DCI Security" onerror="this.style.display='none'"><span>DCI Certified</span></div>
+          <div class="marquee-item"><img src="assets/ssl.jpg" alt="SSL 256" onerror="this.style.display='none'"><span>SSL Secure</span></div>
+          <div class="marquee-item"><img src="assets/cloudflare.jpg" alt="Cloudflare" onerror="this.style.display='none'"><span>Cloudflare</span></div>
+          <div class="marquee-item"><img src="assets/aws.jpg" alt="AWS" onerror="this.style.display='none'"><span>AWS</span></div>
 
           <!-- Seamless Duplication Set -->
-          <div class="marquee-item"><img src="assets/stripe.svg" alt="Stripe" onerror="this.style.display='none'"><span>Stripe</span></div>
-          <div class="marquee-item"><img src="assets/paypal.svg" alt="PayPal" onerror="this.style.display='none'"><span>PayPal</span></div>
-          <div class="marquee-item"><img src="assets/square.svg" alt="Square" onerror="this.style.display='none'"><span>Square</span></div>
-          <div class="marquee-item"><img src="assets/razorpay.svg" alt="Razorpay" onerror="this.style.display='none'"><span>Razorpay</span></div>
-          <div class="marquee-item"><img src="assets/flutterwave.svg" alt="Flutterwave" onerror="this.style.display='none'"><span>Flutterwave</span></div>
-          <div class="marquee-item"><img src="assets/apple-pay.svg" alt="Apple Pay" onerror="this.style.display='none'"><span>Apple Pay</span></div>
-          <div class="marquee-item"><img src="assets/google-pay.svg" alt="Google Pay" onerror="this.style.display='none'"><span>Google Pay</span></div>
-          <div class="marquee-item"><img src="assets/visa.svg" alt="Visa" onerror="this.style.display='none'"><span>Visa</span></div>
-          <div class="marquee-item"><img src="assets/mastercard.svg" alt="Mastercard" onerror="this.style.display='none'"><span>Mastercard</span></div>
-          <div class="marquee-item"><img src="assets/dci.svg" alt="DCI Security" onerror="this.style.display='none'"><span>DCI Certified</span></div>
-          <div class="marquee-item"><img src="assets/ssl.svg" alt="SSL 256" onerror="this.style.display='none'"><span>SSL Secure</span></div>
-          <div class="marquee-item"><img src="assets/cloudflare.svg" alt="Cloudflare" onerror="this.style.display='none'"><span>Cloudflare</span></div>
-          <div class="marquee-item"><img src="assets/aws.svg" alt="AWS" onerror="this.style.display='none'"><span>AWS</span></div>
+          <div class="marquee-item"><img src="assets/stripe.jpg" alt="Stripe" onerror="this.style.display='none'"><span>Stripe</span></div>
+          <div class="marquee-item"><img src="assets/paypal.jpg" alt="PayPal" onerror="this.style.display='none'"><span>PayPal</span></div>
+          <div class="marquee-item"><img src="assets/square.jpg" alt="Square" onerror="this.style.display='none'"><span>Square</span></div>
+          <div class="marquee-item"><img src="assets/razorpay.jpg" alt="Razorpay" onerror="this.style.display='none'"><span>Razorpay</span></div>
+          <div class="marquee-item"><img src="assets/flutterwave.jpg" alt="Flutterwave" onerror="this.style.display='none'"><span>Flutterwave</span></div>
+          <div class="marquee-item"><img src="assets/apple-pay.jpg" alt="Apple Pay" onerror="this.style.display='none'"><span>Apple Pay</span></div>
+          <div class="marquee-item"><img src="assets/google-pay.jpg" alt="Google Pay" onerror="this.style.display='none'"><span>Google Pay</span></div>
+          <div class="marquee-item"><img src="assets/visa.jpg" alt="Visa" onerror="this.style.display='none'"><span>Visa</span></div>
+          <div class="marquee-item"><img src="assets/mastercard.jpg" alt="Mastercard" onerror="this.style.display='none'"><span>Mastercard</span></div>
+          <div class="marquee-item"><img src="assets/dci.jpg" alt="DCI Security" onerror="this.style.display='none'"><span>DCI Certified</span></div>
+          <div class="marquee-item"><img src="assets/ssl.jpg" alt="SSL 256" onerror="this.style.display='none'"><span>SSL Secure</span></div>
+          <div class="marquee-item"><img src="assets/cloudflare.jpg" alt="Cloudflare" onerror="this.style.display='none'"><span>Cloudflare</span></div>
+          <div class="marquee-item"><img src="assets/aws.jpg" alt="AWS" onerror="this.style.display='none'"><span>AWS</span></div>
         </div>
       </div>
 
       <div class="footer-top">
         <div class="footer-brand">
           <a class="brand" href="index.html" aria-label="EsselTen home">
-            <img src="assets/logo-white.svg" alt="EsselTen" class="brand-logo-img" onload="this.nextElementSibling.style.display='none'" onerror="this.style.display='none';this.nextElementSibling.style.display='inline-block'">
+            <img src="assets/logo-white.jpg" alt="EsselTen" class="brand-logo-img" onload="this.nextElementSibling.style.display='none'" onerror="this.style.display='none';this.nextElementSibling.style.display='inline-block'">
             <span class="brand-wordmark" aria-label="EsselTen">Essel<b>Ten</b></span>
           </a>
           <p style="margin-top:10px">Secure Payments. Global Access. Powering your business with secure payments, reliable cloud hosting, and professional developer tools worldwide.</p>
           <div class="social-icons-tray">
             <a href="https://wa.me/233202186264" class="social-icon-btn" aria-label="WhatsApp" target="_blank" rel="noopener noreferrer">
-              <img src="assets/whatsapp.svg" alt="" onerror="this.style.display='none'">💬
+              <img src="assets/whatsapp.jpg" alt="" onerror="this.style.display='none'">💬
             </a>
             <a href="#social" class="social-icon-btn" aria-label="Facebook">
-              <img src="assets/facebook.svg" alt="" onerror="this.style.display='none'">f
+              <img src="assets/facebook.jpg" alt="" onerror="this.style.display='none'">f
             </a>
             <a href="#social" class="social-icon-btn" aria-label="X">
-              <img src="assets/x.svg" alt="" onerror="this.style.display='none'">𝕏
+              <img src="assets/x.jpg" alt="" onerror="this.style.display='none'">𝕏
             </a>
             <a href="#social" class="social-icon-btn" aria-label="Instagram">
-              <img src="assets/instagram.svg" alt="" onerror="this.style.display='none'">ig
+              <img src="assets/instagram.jpg" alt="" onerror="this.style.display='none'">ig
             </a>
             <a href="#social" class="social-icon-btn" aria-label="LinkedIn">
-              <img src="assets/linkedin.svg" alt="" onerror="this.style.display='none'">in
+              <img src="assets/linkedin.jpg" alt="" onerror="this.style.display='none'">in
             </a>
             <a href="#social" class="social-icon-btn" aria-label="YouTube">
-              <img src="assets/youtube.svg" alt="" onerror="this.style.display='none'">▶
+              <img src="assets/youtube.jpg" alt="" onerror="this.style.display='none'">▶
             </a>
             <a href="#social" class="social-icon-btn" aria-label="Telegram">
-              <img src="assets/telegram.svg" alt="" onerror="this.style.display='none'">✈
+              <img src="assets/telegram.jpg" alt="" onerror="this.style.display='none'">✈
             </a>
           </div>
         </div>
@@ -1688,14 +1886,14 @@ h1 span{color:var(--teal)}
         <div>
           <div style="font-size:11.5px;font-weight:800;text-transform:uppercase;letter-spacing:.08em;color:#00f2fe;margin-bottom:3px">Accepted Payment Rails</div>
           <div class="accepted-payments-strip">
-            <span class="pay-pill"><img src="assets/visa.svg" alt="" onerror="this.style.display='none'"> VISA</span>
-            <span class="pay-pill"><img src="assets/mastercard.svg" alt="" onerror="this.style.display='none'"> Mastercard</span>
-            <span class="pay-pill"><img src="assets/paypal.svg" alt="" onerror="this.style.display='none'"> PayPal</span>
-            <span class="pay-pill"><img src="assets/stripe.svg" alt="" onerror="this.style.display='none'"> Stripe</span>
-            <span class="pay-pill"><img src="assets/mtn-momo.svg" alt="" onerror="this.style.display='none'"> MTN MoMo</span>
-            <span class="pay-pill"><img src="assets/telecel-cash.svg" alt="" onerror="this.style.display='none'"> Telecel Cash</span>
-            <span class="pay-pill"><img src="assets/at-money.svg" alt="" onerror="this.style.display='none'"> AT Money</span>
-            <span class="pay-pill"><img src="assets/bank-transfer.svg" alt="" onerror="this.style.display='none'"> Bank Transfer</span>
+            <span class="pay-pill"><img src="assets/visa.jpg" alt="" onerror="this.style.display='none'"> VISA</span>
+            <span class="pay-pill"><img src="assets/mastercard.jpg" alt="" onerror="this.style.display='none'"> Mastercard</span>
+            <span class="pay-pill"><img src="assets/paypal.jpg" alt="" onerror="this.style.display='none'"> PayPal</span>
+            <span class="pay-pill"><img src="assets/stripe.jpg" alt="" onerror="this.style.display='none'"> Stripe</span>
+            <span class="pay-pill"><img src="assets/mtn-momo.jpg" alt="" onerror="this.style.display='none'"> MTN MoMo</span>
+            <span class="pay-pill"><img src="assets/telecel-cash.jpg" alt="" onerror="this.style.display='none'"> Telecel Cash</span>
+            <span class="pay-pill"><img src="assets/at-money.jpg" alt="" onerror="this.style.display='none'"> AT Money</span>
+            <span class="pay-pill"><img src="assets/bank-transfer.jpg" alt="" onerror="this.style.display='none'"> Bank Transfer</span>
           </div>
         </div>
 
@@ -1703,10 +1901,10 @@ h1 span{color:var(--teal)}
           <div style="font-size:11.5px;font-weight:800;text-transform:uppercase;letter-spacing:.08em;color:#00f2fe;margin-bottom:3px">Download Our App</div>
           <div class="app-downloads">
             <a href="#download" onclick="triggerInDevAdvisory()" class="app-badge-btn">
-              <img src="assets/google-play.svg" alt="" style="width:12px;height:12px" onerror="this.style.display='none'"> Google Play
+              <img src="assets/google-play.jpg" alt="" style="width:12px;height:12px" onerror="this.style.display='none'"> Google Play
             </a>
             <a href="#download" onclick="triggerInDevAdvisory()" class="app-badge-btn">
-              <img src="assets/app-store.svg" alt="" style="width:12px;height:12px" onerror="this.style.display='none'"> App Store
+              <img src="assets/app-store.jpg" alt="" style="width:12px;height:12px" onerror="this.style.display='none'"> App Store
             </a>
           </div>
         </div>
@@ -1731,7 +1929,7 @@ h1 span{color:var(--teal)}
 <a class="whatsapp-float" href="https://wa.me/233202186264?text=Hello%20EsselTen%2C%20I%20need%20assistance%20with%20my%20account" target="_blank" rel="noopener noreferrer" aria-label="Chat with EsselTen Admin on WhatsApp">
   <div class="whatsapp-bubble">Chat with Admin (+233202186264)</div>
   <div class="whatsapp-btn">
-    <img src="assets/whatsapp.svg" alt="WhatsApp" onerror="this.style.display='none'">💬
+    <img src="assets/whatsapp.jpg" alt="WhatsApp" onerror="this.style.display='none'">💬
   </div>
 </a>
 
@@ -1743,7 +1941,7 @@ h1 span{color:var(--teal)}
       <div class="auth-side-perks">
         <div>
           <div class="brand">
-            <img src="assets/logo-white.svg" alt="EsselTen" class="brand-logo-img" onload="this.nextElementSibling.style.display='none'" onerror="this.style.display='none';this.nextElementSibling.style.display='inline-block'">
+            <img src="assets/logo-white.jpg" alt="EsselTen" class="brand-logo-img" onload="this.nextElementSibling.style.display='none'" onerror="this.style.display='none';this.nextElementSibling.style.display='inline-block'">
             <span class="brand-wordmark" style="color:#fff;font-size:19px">Essel<b>Ten</b></span>
           </div>
           <p style="font-size:11px;color:#00f2fe;font-weight:700;margin:4px 0 12px">Simple. Secure. Global.</p>
@@ -2348,7 +2546,7 @@ h1 span{color:var(--teal)}
     }
   });
 
-  // Real-time Auth Observer (Switches from landing to verified dashboard immediately)
+  // Real-time Auth Observer
   onAuthStateChanged(auth, (user) => {
     const landing = byId('landing-root');
     const dashboard = byId('dashboard-view');
@@ -2369,6 +2567,114 @@ h1 span{color:var(--teal)}
   });
 
   byId('year').textContent = new Date().getFullYear();
+
+  // ===== 8-EFFECT SCROLLYTELLING ANIMATION ENGINE (LENIS + GSAP) =====
+  function initScrollytelling() {
+    gsap.registerPlugin(ScrollTrigger);
+
+    // 8. Inertia / Momentum Smooth Scrolling (Lenis)
+    const lenis = new Lenis({
+      duration: 1.2,
+      easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
+      smoothWheel: true,
+      touchMultiplier: 1.4,
+    });
+    lenis.on('scroll', ScrollTrigger.update);
+    gsap.ticker.add((time) => { lenis.raf(time * 1000); });
+    gsap.ticker.lagSmoothing(0);
+
+    // 2. Viewport Pinning & Master Timeline
+    const mainTimeline = gsap.timeline({
+      scrollTrigger: {
+        trigger: "#scrollytelling-showcase",
+        start: "top top",
+        end: "+=2600",
+        scrub: 1,
+        pin: true,
+        anticipatePin: 1,
+      }
+    });
+
+    // 3. Kinetic Typography Fade & Scale
+    mainTimeline.to("#scrolly-typo", {
+      scale: 0.72,
+      opacity: 0.01,
+      filter: "blur(12px)",
+      duration: 2,
+      ease: "power2.out"
+    }, 0);
+
+    // 1. Scroll-Driven 3D Assembly ("Exploded View" -> Unified Compact Core)
+    mainTimeline.to("#layer-cap", {
+      top: "100px",
+      scale: 0.96,
+      duration: 2.2,
+      ease: "power2.inOut"
+    }, 0);
+
+    mainTimeline.to("#layer-base", {
+      bottom: "95px",
+      scale: 0.96,
+      duration: 2.2,
+      ease: "power2.inOut"
+    }, 0);
+
+    // 4. Staggered Feature/Ingredient Radial Pop-in Badges
+    mainTimeline.to(["#r-badge-1", "#r-badge-2", "#r-badge-3", "#r-badge-4"], {
+      scale: 1,
+      opacity: 1,
+      stagger: 0.25,
+      duration: 1.8,
+      ease: "back.out(1.8)"
+    }, 1.2);
+
+    // Fade badges out as camera shifts
+    mainTimeline.to(["#r-badge-1", "#r-badge-2", "#r-badge-3", "#r-badge-4"], {
+      scale: 0.75,
+      opacity: 0,
+      duration: 1.2,
+      ease: "power2.in"
+    }, 3.5);
+
+    // 5. Position & Spatial Translation (Model glides right on desktop)
+    const isMobile = window.innerWidth <= 960;
+    mainTimeline.to("#scrolly-stage", {
+      x: isMobile ? 0 : 250,
+      y: isMobile ? -140 : 0,
+      scale: isMobile ? 0.75 : 0.88,
+      rotateY: isMobile ? 0 : -14,
+      duration: 3,
+      ease: "power2.inOut"
+    }, 4.2);
+
+    // 6. Seamless Asset / State Swap (Core morphs into Live Runtime Node)
+    mainTimeline.to(["#layer-cap", "#layer-mid", "#layer-base"], {
+      opacity: 0,
+      scale: 0.85,
+      duration: 1.5,
+      ease: "power2.inOut"
+    }, 4.8);
+
+    mainTimeline.to("#core-swapped", {
+      opacity: 1,
+      scale: 1,
+      duration: 1.8,
+      ease: "power2.out"
+    }, 5.0);
+
+    // 7. Staggered Vertical Card Slide-In (Left Rail Content)
+    mainTimeline.to(["#b-card-1", "#b-card-2", "#b-card-3", "#b-card-4"], {
+      y: 0,
+      opacity: 1,
+      stagger: 0.35,
+      duration: 2,
+      ease: "power2.out"
+    }, 4.6);
+  }
+
+  window.addEventListener('DOMContentLoaded', initScrollytelling);
+
+  // Standard Scroll Reveals
   function initObserver() {
     const items = document.querySelectorAll('.reveal');
     if (!('IntersectionObserver' in window)) { items.forEach(el => el.classList.add('in-view')); return; }
