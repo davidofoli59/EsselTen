@@ -1507,149 +1507,136 @@ h1 span{
 .auth-success{background:#ecfdf5;color:#065f46;border:1px solid #a7f3d0;border-radius:6px;padding:6px 9px;font-size:10.5px;margin-bottom:7px;display:none}
 .auth-success.show{display:block}
 
-#dashboard-view{display:none;min-height:100vh;background:#f3f6f9;width:100%;max-width:100%}
+/* =========================================================
+   EXACT AI STUDIO DASHBOARD (MATCHING PROVIDED REFERENCE IMAGE)
+   ========================================================= */
+#dashboard-view{display:none;min-height:100vh;width:100%;max-width:100vw;background:#05070e;color:#f1f5f9;position:relative;overflow-x:hidden}
 #dashboard-view.show{display:block}
-.d-shell{display:grid;grid-template-columns:195px 1fr;min-height:100vh;width:100%}
-.d-sidebar{
-  background:#fff;
-  border-right:1px solid #e5e9f0;
-  padding:14px 10px;
-  display:flex;
-  flex-direction:column;
-  justify-content:space-between;
-}
-.d-brand{display:flex;align-items:center;gap:7px;font-size:14px;font-weight:900;color:#0b2138;margin-bottom:14px;padding:0 4px}
-.d-brand-icon{width:24px;height:24px;border-radius:7px;background:linear-gradient(135deg,#00f2fe,#00c48c);display:grid;place-items:center;color:#071a2e;font-size:11px}
-.d-nav{display:grid;gap:2px}
-.d-nav a{
-  display:flex;
-  align-items:center;
-  gap:7px;
-  padding:7px 9px;
-  border-radius:7px;
-  font-size:11px;
-  color:#475569;
-  text-decoration:none;
-  font-weight:600;
-  transition:all 0.15s;
-}
-.d-nav a:hover{background:#f1f5f9;color:#0b2138}
-.d-nav a.active{background:#e8f4fc;color:#0877b9;font-weight:750}
-.d-nav .nav-badge{margin-left:auto;background:#dcfce7;color:#15803d;font-size:8px;font-weight:800;padding:1px 6px;border-radius:99px}
-.d-nav-sep{font-size:9px;text-transform:uppercase;letter-spacing:.08em;color:#94a3b8;font-weight:800;margin:12px 0 4px 7px}
-.d-subnav{padding-left:10px;display:grid;gap:2px}
-.d-subnav a{font-size:10px;padding:4px 7px;color:#64748b}
-.d-help-box{background:#f8fafc;border:1px solid #e2e8f0;border-radius:9px;padding:9px;margin-top:12px}
-.d-help-box strong{font-size:10.5px;color:#0f172a;display:block}
-.d-help-box p{margin:2px 0 6px;font-size:9.5px;color:#64748b}
-.d-help-box button{width:100%;padding:5px;background:#fff;border:1px solid #cbd5e1;border-radius:6px;font-size:10px;font-weight:750;cursor:pointer}
-.d-main{padding:14px 16px;width:100%}
-.d-topbar{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:14px;width:100%}
-.d-search{flex:1;max-width:290px;position:relative}
-.d-search input{width:100%;padding:7px 9px 7px 26px;background:#fff;border:1px solid #e2e8f0;border-radius:7px;font-size:11px;outline:none}
-.d-search-icon{position:absolute;left:8px;top:50%;transform:translateY(-50%);color:#94a3b8;font-size:11px}
-.d-user-corner{display:flex;align-items:center;gap:9px}
-.d-notif-btn{width:28px;height:28px;border-radius:7px;background:#fff;border:1px solid #e2e8f0;display:grid;place-items:center;color:#64748b;cursor:pointer;position:relative}
-.d-notif-badge{width:5px;height:5px;border-radius:50%;background:#ef4444;position:absolute;top:4px;right:4px}
-.d-profile-pill{display:flex;align-items:center;gap:7px;text-align:right}
-.d-avatar-initials{width:26px;height:26px;border-radius:50%;background:#1e3a5f;color:#fff;display:grid;place-items:center;font-weight:800;font-size:11px}
-.d-greeting{margin-bottom:14px}
-.d-greeting h1{font-size:16px;margin:0 0 2px}
-.d-greeting p{margin:0;font-size:10.5px;color:var(--muted)}
-.d-stats-4{display:grid;grid-template-columns:repeat(4, minmax(0, 1fr));gap:12px;margin-bottom:14px;width:100%}
-.d-stat-box{background:#fff;border:1px solid #e5e9f0;border-radius:12px;padding:12px 14px;box-shadow:var(--shadow-sm)}
-.d-stat-head{display:flex;align-items:center;gap:6px;font-size:10.5px;color:#64748b;font-weight:650}
-.d-stat-icon{width:20px;height:20px;border-radius:50%;display:grid;place-items:center;font-size:10px;color:#fff}
-.d-stat-icon.green{background:#10b981}.d-stat-icon.blue{background:#0284c7}.d-stat-icon.gold{background:#f59e0b}.d-stat-icon.red{background:#ef4444}
-.d-stat-value{font-size:15px;font-weight:800;color:#0f172a;margin:5px 0 3px}
-.d-stat-spark{height:18px;width:100%}
-.d-middle-grid{display:grid;grid-template-columns:1fr 220px;gap:12px;margin-bottom:14px;width:100%}
-.d-card{background:#fff;border:1px solid #e5e9f0;border-radius:12px;padding:14px;box-shadow:var(--shadow-sm)}
-.d-card-head{display:flex;align-items:center;justify-content:space-between;margin-bottom:9px}
-.d-card-head h3{font-size:12px;margin:0;font-weight:750}
-.d-charts-split{display:grid;grid-template-columns:1.2fr 0.9fr;gap:12px;align-items:center}
-.d-bar-chart-mock{height:95px;display:flex;align-items:flex-end;justify-content:space-around;padding-bottom:3px;border-bottom:1px solid #f1f5f9}
-.d-bar-group{width:13px;display:flex;flex-direction:column-reverse;gap:1px}
-.d-bar{border-radius:3px;width:100%}
-.donut-circle{width:64px;height:64px;border-radius:50%;background:conic-gradient(#10b981 0% 45%,#0284c7 45% 70%,#a855f7 70% 85%,#f59e0b 85% 95%,#cbd5e1 95% 100%);display:grid;place-items:center}
-.donut-inner{width:40px;height:40px;border-radius:50%;background:#fff}
-.d-actions-grid{display:grid;grid-template-columns:repeat(2, minmax(0, 1fr));gap:6px}
-.d-action-tile{background:#f8fafc;border:1px solid #e2e8f0;border-radius:7px;padding:7px 5px;display:flex;flex-direction:column;align-items:center;gap:4px;font-size:9px;font-weight:750;color:#334155;cursor:pointer;text-align:center;transition:all 0.15s}
-.d-action-tile:hover{border-color:#0284c7;background:#f0f9ff;transform:translateY(-1.5px)}
-.d-action-icon{width:20px;height:20px;border-radius:6px;display:grid;place-items:center;font-size:10px}
-.d-balance-box{background:linear-gradient(135deg,#0e4863,#072b3d);color:#fff;border-radius:12px;padding:12px 14px;margin-top:9px;display:flex;align-items:center;justify-content:space-between}
-.d-balance-val{font-size:15px;font-weight:900}
-.btn-withdraw{background:#fff;color:#0f2b3e;border:none;padding:5px 9px;border-radius:6px;font-size:10px;font-weight:800;cursor:pointer}
-.d-lower-grid{display:grid;grid-template-columns:1fr 220px;gap:12px;margin-bottom:14px;width:100%}
-.d-empty-state{text-align:center;padding:18px 10px;display:flex;flex-direction:column;align-items:center}
-.d-empty-icon{width:32px;height:32px;border-radius:50%;background:#eef6fc;color:#0877b9;display:grid;place-items:center;font-size:14px;margin-bottom:5px}
-.d-empty-state h4{margin:0 0 3px;font-size:11.5px}
-.d-empty-state p{margin:0 0 9px;font-size:10px;color:var(--muted)}
-.d-empty-state button{background:#10b981;color:#fff;border:none;padding:5px 11px;border-radius:6px;font-weight:750;font-size:10px;cursor:pointer}
-.d-bottom-row{display:grid;grid-template-columns:repeat(6, minmax(0, 1fr));gap:7px;width:100%}
-.d-bottom-tile{background:#fff;border:1px solid #e5e9f0;border-radius:8px;padding:7px 9px;font-size:9px;display:flex;flex-direction:column;gap:1.5px}
-.d-bottom-tile strong{font-size:10px;color:#0f172a}
+.dash-scroll-wrapper{width:100%;overflow-x:auto;-webkit-overflow-scrolling:touch}
+.ai-dash-shell{display:grid;grid-template-columns:220px 1fr;min-height:100vh;background:#05070e;min-width:1050px}
 
-.dev-modal-overlay{position:fixed;inset:0;background:rgba(10,25,38,0.8);backdrop-filter:blur(6px);z-index:150;display:none;align-items:center;justify-content:center;padding:12px}
-.dev-modal-overlay.show{display:flex}
-.dev-modal{background:#fff;border-radius:14px;width:min(320px, 100%);padding:18px 16px;text-align:center;box-shadow:var(--shadow-lg)}
-.dev-modal-icon{width:38px;height:38px;border-radius:50%;background:#e0f2fe;color:#0369a1;display:grid;place-items:center;font-size:17px;margin:0 auto 9px}
-.dev-modal h3{margin:0 0 5px;font-size:13px}
-.dev-modal p{margin:0 0 12px;font-size:11px;color:var(--muted);line-height:1.5}
-.dev-modal .btn-close-dev{width:100%;padding:7px;background:#0284c7;color:#fff;border:none;border-radius:7px;font-weight:750;font-size:11px;cursor:pointer}
+.ai-sidebar{background:#090d16;border-right:1px solid #131c2d;padding:14px 10px;display:flex;flex-direction:column;gap:12px;position:relative;z-index:20}
+.ai-sidebar-brand{display:flex;align-items:center;gap:8px;padding:0 6px 10px;border-bottom:1px solid #131f33}
+.ai-sidebar-brand-e{width:32px;height:32px;border-radius:8px;background:linear-gradient(135deg, #ffc83b, #ff8c00);display:grid;place-items:center;color:#070d18;font-weight:950;font-size:17px;box-shadow:0 0 16px rgba(255,184,28,0.45)}
+.ai-brand-titles h2{margin:0;font-size:14px;font-weight:900;color:#fff}
+.ai-brand-titles p{margin:1px 0 0;font-size:8px;color:#94a3b8;font-weight:700}
 
-@media(max-width:960px){
-  header{flex-wrap:wrap;padding:8px 0}
-  .navlinks{display:flex;width:100%;order:3;padding:4px 0;gap:8px;justify-content:center}
-  .nav{order:2}
-  .d-shell{grid-template-columns:1fr}
-  .d-sidebar{display:flex;flex-direction:row;flex-wrap:wrap;padding:8px;gap:6px;border-right:none;border-bottom:1px solid #e5e9f0}
-  .d-sidebar > div{display:flex;flex-wrap:wrap;gap:4px;width:100%}
-  .d-nav{display:flex;flex-wrap:wrap;gap:4px;width:100%}
-  .d-nav-sep, .d-subnav{display:flex;flex-wrap:wrap;gap:4px;margin:2px}
-  .d-help-box{display:none}
-  .d-stats-4{grid-template-columns:repeat(2, minmax(0, 1fr))}
-  .d-middle-grid, .d-lower-grid{grid-template-columns:1fr}
-  .d-bottom-row{grid-template-columns:repeat(3, minmax(0, 1fr))}
-  .flow-modules-grid{grid-template-columns:1fr}
-  .pillars-grid{grid-template-columns:repeat(2, minmax(0, 1fr))}
-  .trust-ribbon-grid{grid-template-columns:repeat(2, minmax(0, 1fr))}
-  .footer-mid-row{grid-template-columns:1fr}
-  .footer-top{grid-template-columns:1fr}
+.ai-sidebar-nav{display:flex;flex-direction:column;gap:2px;overflow-y:auto}
+.ai-nav-item{display:flex;align-items:center;gap:9px;padding:7px 10px;border-radius:8px;font-size:11px;color:#94a3b8;text-decoration:none;font-weight:600;cursor:pointer}
+.ai-nav-item:hover{background:#0e1626;color:#fff}
+.ai-nav-item.active{background:linear-gradient(90deg, rgba(255,184,28,0.18), rgba(255,184,28,0.05));color:#ffd15c;border:1px solid rgba(255,184,28,0.4);font-weight:800}
+.ai-nav-group-title{font-size:8.5px;text-transform:uppercase;letter-spacing:0.09em;color:#00f2fe;font-weight:850;margin:14px 0 4px 8px}
+.ai-subnav-list{display:flex;flex-direction:column;gap:2px;padding-left:14px}
+.ai-subnav-item{font-size:10px;padding:4px 8px;color:#64748b;border-radius:6px;display:flex;align-items:center;justify-content:space-between;cursor:pointer}
+.ai-subnav-item:hover{color:#e2e8f0;background:#0d1627}
+.ai-subnav-item.active{background:#13233c;color:#ffd15c;font-weight:750}
+
+.ai-main-viewport{display:flex;flex-direction:column;min-width:0;background:radial-gradient(ellipse at 70% 0%, rgba(14,40,77,0.35) 0%, #05070e 70%)}
+.ai-topbar{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:10px 18px;background:#090d16;border-bottom:1px solid #131c2d}
+.ai-search-box{display:flex;align-items:center;gap:8px;background:#0e1524;border:1px solid #1c2a42;border-radius:8px;padding:6px 12px;width:380px}
+.ai-search-box input{background:none;border:none;outline:none;color:#fff;font-size:11px;width:100%}
+.ai-topbar-actions{display:flex;align-items:center;gap:10px}
+.btn-ai-new-proj{background:none;border:1px solid #eab308;color:#fde047;border-radius:8px;padding:5px 12px;font-size:11px;font-weight:800;display:flex;align-items:center;gap:5px;cursor:pointer}
+.ai-notif-btn{width:30px;height:30px;border-radius:8px;background:#0e1524;border:1px solid #1c2a42;color:#cbd5e1;display:grid;place-items:center;position:relative;cursor:pointer}
+.ai-notif-count{position:absolute;top:-3px;right:-3px;width:15px;height:15px;background:#ef4444;color:#fff;border-radius:50%;font-size:8.5px;font-weight:850;display:grid;place-items:center}
+.ai-profile-chip{display:flex;align-items:center;gap:8px;padding:3px 8px;border-radius:8px;background:#0e1524;border:1px solid #1c2a42}
+.ai-chip-avatar{width:26px;height:26px;border-radius:50%;background:linear-gradient(135deg, #0284c7, #3b82f6);color:#fff;display:grid;place-items:center;font-size:11px;font-weight:900}
+.ai-chip-info strong{font-size:11px;color:#fff;display:block;line-height:1.2}
+.ai-chip-info span{font-size:8.5px;color:#94a3b8}
+.btn-live-signout{background:#1e293b;border:1px solid #334155;color:#f87171;font-size:10px;font-weight:750;padding:5px 9px;border-radius:7px;cursor:pointer}
+
+.ai-ribbon-bar{background:#0c111c;border-bottom:1px solid #172439;padding:6px 18px 8px}
+.ai-ribbon-tabs{display:flex;align-items:center;gap:4px;overflow-x:auto;padding-bottom:5px;border-bottom:1px solid #152236}
+.ai-ribbon-tab{padding:4px 11px;font-size:10.5px;font-weight:750;color:#94a3b8;background:none;border:none;border-radius:6px;cursor:pointer;white-space:nowrap}
+.ai-ribbon-tab.active{background:linear-gradient(135deg, #eab308, #ca8a04);color:#06101e;font-weight:850}
+.ai-ribbon-shelf{display:flex;align-items:center;gap:16px;padding-top:8px;overflow-x:auto}
+.ai-ribbon-group{display:flex;align-items:center;gap:8px;padding-right:14px;border-right:1px solid #152236}
+.ai-ribbon-btn-big{display:flex;flex-direction:column;align-items:center;gap:3px;background:#0e1626;border:1px solid #1c2b44;color:#cbd5e1;padding:5px 9px;border-radius:7px;font-size:9.5px;font-weight:700;cursor:pointer}
+.ai-ribbon-sublist{display:grid;grid-template-columns:repeat(2, auto);gap:4px}
+.ai-ribbon-pill-btn{background:#0e1626;border:1px solid #1a283f;color:#94a3b8;padding:3px 7px;border-radius:5px;font-size:9px;font-weight:650;cursor:pointer}
+.ai-share-purple-btn{background:linear-gradient(135deg, #9333ea, #7c3aed);border:none;color:#fff;padding:6px 14px;border-radius:7px;font-size:10.5px;font-weight:800;display:flex;align-items:center;gap:5px;cursor:pointer;margin-left:auto}
+
+.ai-content-canvas{padding:16px 18px 30px;display:flex;flex-direction:column;gap:16px}
+.ai-hero-banner{background:linear-gradient(135deg, #090f20 0%, #170d33 45%, #05142f 100%);border:1px solid #233454;border-radius:18px;padding:24px 28px;display:grid;grid-template-columns:1.2fr 0.9fr;align-items:center;gap:20px;position:relative;overflow:hidden;box-shadow:0 18px 45px rgba(0,0,0,0.55)}
+.ai-banner-tag{display:inline-flex;align-items:center;gap:5px;background:rgba(255,184,28,0.15);border:1px solid rgba(255,184,28,0.5);color:#ffd15c;padding:3px 10px;border-radius:999px;font-size:9.5px;font-weight:850;margin-bottom:8px}
+.ai-hero-banner h1{font-size:26px;margin:0 0 8px;line-height:1.2;font-weight:900;color:#fff}
+.ai-hero-banner p{font-size:12px;color:#cbd5e1;line-height:1.55;margin:0 0 16px;max-width:540px}
+.btn-ai-hero-cta{background:linear-gradient(135deg, #ffc83b, #ff8c00);border:none;color:#06101e;padding:9px 18px;border-radius:999px;font-size:12px;font-weight:900;cursor:pointer;box-shadow:0 6px 20px rgba(255,140,0,0.45)}
+
+.ai-stats-row{display:grid;grid-template-columns:repeat(4, minmax(0, 1fr));gap:12px}
+.ai-stat-card{background:#090e1a;border:1px solid #142238;border-radius:14px;padding:14px;display:flex;flex-direction:column;justify-content:space-between}
+.ai-stat-icon-wrap{width:28px;height:28px;border-radius:8px;display:grid;place-items:center;font-size:14px}
+.ai-stat-icon-wrap.green{background:rgba(16,185,129,0.18);color:#10b981;border:1px solid rgba(16,185,129,0.35)}
+.ai-stat-icon-wrap.purple{background:rgba(168,85,247,0.18);color:#a855f7;border:1px solid rgba(168,85,247,0.35)}
+.ai-stat-icon-wrap.gold{background:rgba(255,184,28,0.18);color:#ffb81c;border:1px solid rgba(255,184,28,0.35)}
+.ai-stat-icon-wrap.red{background:rgba(239,68,68,0.18);color:#ef4444;border:1px solid rgba(239,68,68,0.35)}
+.ai-stat-num{font-size:20px;font-weight:900;color:#fff}
+
+.ai-mid-split{display:grid;grid-template-columns:1fr 340px;gap:16px}
+.ai-card-shell{background:#090e1a;border:1px solid #142238;border-radius:14px;padding:16px}
+.ai-stacked-bar-container{display:grid;grid-template-columns:30px 1fr;gap:8px;height:120px;align-items:flex-end}
+.ai-bars-flex{display:flex;justify-content:space-around;align-items:flex-end;height:100%;border-bottom:1px solid #172439}
+.ai-bar-col{display:flex;flex-direction:column-reverse;gap:2px;width:18px}
+.ai-bar-seg{width:100%;border-radius:2px}
+
+.ai-donut-grid{display:grid;grid-template-columns:100px 1fr;align-items:center;gap:16px}
+.ai-donut-disc{width:90px;height:90px;border-radius:50%;background:conic-gradient(#00c48c 0% 40%, #0284c7 40% 70%, #a855f7 70% 85%, #f59e0b 85% 95%, #ef4444 95% 100%);display:grid;place-items:center}
+.ai-donut-hole{width:56px;height:56px;border-radius:50%;background:#090e1a}
+
+.ai-quick-actions-grid{display:grid;grid-template-columns:repeat(2, minmax(0, 1fr));gap:7px}
+.ai-action-btn{background:#0b1322;border:1px solid #16243a;border-radius:9px;padding:9px;display:flex;align-items:center;gap:8px;color:#e2e8f0;font-size:10px;font-weight:750;cursor:pointer}
+.ai-balance-card{background:linear-gradient(135deg, #0d1a2d, #081220);border:1px solid #1c3354;border-radius:12px;padding:12px 14px;display:flex;align-items:center;justify-content:space-between}
+.btn-ai-withdraw{background:linear-gradient(135deg, #ffc83b, #ff8c00);border:none;color:#06101e;padding:6px 12px;border-radius:7px;font-size:10px;font-weight:850;cursor:pointer}
+
+.ai-creations-grid{display:grid;grid-template-columns:repeat(5, minmax(0, 1fr));gap:10px;margin-top:10px}
+.ai-creation-card{background:#090e1a;border:1px solid #142238;border-radius:12px;padding:8px;display:flex;flex-direction:column;gap:6px}
+.ai-creation-thumb{width:100%;height:76px;border-radius:8px;background:#0c1424;display:grid;place-items:center;overflow:hidden;border:1px solid #16253c}
+.ai-card-btn-duo{display:grid;grid-template-columns:1fr 1fr;gap:4px}
+.ai-card-btn-duo button{padding:3px;border-radius:4px;font-size:8.5px;font-weight:700;background:#0e1728;border:1px solid #1b2c45;color:#cbd5e1;cursor:pointer}
+
+.ai-dash-bottom-strip{background:#090d16;border-top:1px solid #131c2d;padding:10px 18px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:10px;font-size:10px;color:#94a3b8}
+
+@media(max-width:1100px){
+  .ai-mid-split{grid-template-columns:1fr}
+  .ai-creations-grid{grid-template-columns:repeat(3, minmax(0, 1fr))}
 }
-@media(max-width:768px){
-  .auth-body-split{grid-template-columns:1fr}
-  .auth-side-perks{display:block;border-right:none;border-bottom:1px solid #13334f}
-  .auth-providers-row{grid-template-columns:1fr}
-  .grid, .feature-layout, .steps, .hosting-features-grid, .framework-suite{grid-template-columns:1fr}
-  .inquiry-grid{grid-template-columns:1fr}
-  .footer-columns{grid-template-columns:repeat(2, minmax(0, 1fr))}
-  .scrolly-left-content{position:relative;left:auto;width:100%;padding:8px;pointer-events:auto}
-  .scrolly-pin-wrap{flex-direction:column;justify-content:flex-start;padding-top:16px;overflow-y:auto}
-  .scrolly-section{height:auto;min-height:100vh}
-  .public-notice-board{text-align:center}
-  .notice-board-inner{justify-content:center}
+@media(max-width:820px){
+  .ai-dash-shell{grid-template-columns:1fr}
+  .ai-sidebar{display:none}
+  .ai-stats-row{grid-template-columns:repeat(2, minmax(0, 1fr))}
+  .ai-hero-banner{grid-template-columns:1fr}
+  .ai-creations-grid{grid-template-columns:repeat(2, minmax(0, 1fr))}
 }
-@media(max-width:480px){
-  .wrap{width:calc(100% - 16px)}
-  .d-stats-4{grid-template-columns:1fr}
-  .d-charts-split{grid-template-columns:1fr}
-  .d-bottom-row{grid-template-columns:repeat(2, minmax(0, 1fr))}
-  .pillars-grid{grid-template-columns:1fr}
-  .trust-ribbon-grid{grid-template-columns:1fr}
-  .gateway-selection-grid{grid-template-columns:1fr}
-  .phone-box-worldwide{grid-template-columns:1fr}
-  .footer-columns{grid-template-columns:1fr}
-  .flow-stepper{flex-direction:column;gap:4px}
-  .flow-step-divider{display:none}
+
+/* Professional Fullscreen Splash Screen Overlay */
+#auth-splash-screen{
+  position:fixed;inset:0;background:#030c17;z-index:9999;
+  display:none;align-items:center;justify-content:center;flex-direction:column;gap:16px;
+  color:#fff;transition:opacity 0.4s ease;
 }
+#auth-splash-screen.show{display:flex}
+.splash-loader-ring{
+  width:50px;height:50px;border:3px solid rgba(0,242,254,0.15);
+  border-top-color:#00f2fe;border-radius:50%;animation:spinLoader 0.9s infinite linear;
+}
+@keyframes spinLoader{to{transform:rotate(360deg)}}
+.splash-brand{font-size:22px;font-weight:900;letter-spacing:-0.5px}
+.splash-brand b{color:#00c48c}
+.splash-text{font-size:12px;color:#94a3b8;font-weight:600}
 </style>
 </head>
 <body>
 
 <div id="scroll-progress" aria-hidden="true"></div>
 
-<!-- Top Public Notice Board -->
+<!-- Secure Session Splash Loading Screen -->
+<div id="auth-splash-screen">
+  <div class="splash-brand">Essel<b>Ten</b>™</div>
+  <div class="splash-loader-ring"></div>
+  <div class="splash-text" id="splash-status-msg">Initializing Secure Enterprise Session...</div>
+</div>
+
+<!-- Top Professional Notice Board -->
 <div class="public-notice-board" id="public-notice-banner" role="region" aria-label="EsselTen Service Information Notice">
   <div class="wrap notice-board-inner">
     <div class="notice-left">
@@ -1800,7 +1787,7 @@ Service provisioning is being introduced through a phased rollout. Join the prio
           <a class="btn btn-light auth-open-signin" href="#signin">Already Registered? Sign In</a>
         </div>
 
-        <!-- Live Real-Time Dynamic Metric HUD Indicator (Temlis / 3D SaaS Vibe) -->
+        <!-- Live Real-Time Dynamic Metric HUD Indicator -->
         <div class="live-counter-strip" role="status" aria-live="polite">
           <span class="live-counter-item">
             <span class="live-counter-dot"></span>
@@ -2401,7 +2388,9 @@ Prepare for Publishing — Guide users through the requirements for publishing t
         <h2 id="cta-heading">Be Part of What EsselTen Becomes.</h2>
         <p>Join the waitlist for launch updates and developer preview opportunities. Features will be introduced as they are tested and deployed.</p>
         <div class="actions">
-          <a class="btn btn-gold auth-open-signup" href="#signup">Join the Waitlist &rarr;</a>
+          <div class="btn-gold-pulse-glow">
+            <a class="btn btn-gold auth-open-signup" href="#signup">Join the Waitlist &rarr;</a>
+          </div>
           <a class="btn btn-light auth-open-signin" href="#signin">Sign In</a>
         </div>
         <p class="fine" style="color:#e0f2fe">EsselTen is under development. Tools and deployment environments will become available as individual services launch.</p>
@@ -2785,211 +2774,347 @@ Prepare for Publishing — Guide users through the requirements for publishing t
   </div>
 </div>
 
+<!-- =========================================================
+     EXACT AI STUDIO DASHBOARD REPLICA (MATCHING REFERENCE IMAGE)
+     ========================================================= -->
 <div id="dashboard-view">
-  <div class="d-shell">
-    <aside class="d-sidebar" aria-label="Dashboard Sidebar">
-      <div>
-        <div class="d-brand">
-          <div class="d-brand-icon">&#9650;</div>
-          <span>EsselTen</span>
+  <div class="dash-scroll-wrapper">
+    <div class="ai-dash-shell">
+      <aside class="ai-sidebar">
+        <div class="ai-sidebar-brand">
+          <div class="ai-sidebar-brand-e">E</div>
+          <div class="ai-brand-titles">
+            <h2>EsselTen™</h2>
+            <p>Build &middot; Innovate &middot; Grow</p>
+          </div>
         </div>
+        <div class="ai-sidebar-nav">
+          <div class="ai-nav-item active"><span class="ai-nav-item-icon">🏠</span><span>Dashboard</span></div>
+          <div class="ai-nav-item"><span class="ai-nav-item-icon">⚡</span><span>AI Studio</span></div>
+          <div class="ai-nav-item"><span class="ai-nav-item-icon">📊</span><span>Presentations</span></div>
+          <div class="ai-nav-item"><span class="ai-nav-item-icon">🎨</span><span>Design</span></div>
+          <div class="ai-nav-item"><span class="ai-nav-item-icon">🎬</span><span>Animations</span></div>
+          <div class="ai-nav-item"><span class="ai-nav-item-icon">🖼️</span><span>Image Generator</span></div>
+          <div class="ai-nav-item"><span class="ai-nav-item-icon">💬</span><span>Chat with AI</span></div>
+          <div class="ai-nav-item"><span class="ai-nav-item-icon">🤖</span><span>Assistants</span></div>
+          <div class="ai-nav-item"><span class="ai-nav-item-icon">📁</span><span>Projects</span></div>
+          <div class="ai-nav-item"><span class="ai-nav-item-icon">🎮</span><span>Game Builder</span></div>
+          <div class="ai-nav-item"><span class="ai-nav-item-icon">💻</span><span>Software Builder</span></div>
+          <div class="ai-nav-item"><span class="ai-nav-item-icon">📚</span><span>Knowledge</span></div>
+          <div class="ai-nav-item"><span class="ai-nav-item-icon">⚙️</span><span>Integrations</span></div>
+          <div class="ai-nav-item"><span class="ai-nav-item-icon">🔧</span><span>Settings</span></div>
 
-        <nav class="d-nav" aria-label="Dashboard Navigation">
-          <a href="#dash-home" class="active">&#127968; Dashboard</a>
-          <a href="#action" onclick="triggerInDevAdvisory()">&#128179; Transactions</a>
-          <a href="#action" onclick="triggerInDevAdvisory()">&#128176; Payments</a>
-          <a href="#action" onclick="triggerInDevAdvisory()">&#128196; Invoices</a>
-          <a href="#action" onclick="triggerInDevAdvisory()">&#128279; Payment Links</a>
-          <a href="#action" onclick="triggerInDevAdvisory()">&#128101; Customers</a>
-          <a href="#action" onclick="triggerInDevAdvisory()">&#128260; Subscriptions</a>
-          <a href="#action" onclick="triggerInDevAdvisory()">&#127974; Payouts &amp; Withdrawals</a>
-          <a href="#action" onclick="triggerInDevAdvisory()">&#127760; Domains</a>
-          <a href="#action" onclick="triggerInDevAdvisory()">&#128187; Hosting</a>
-          <a href="#action" onclick="triggerInDevAdvisory()">&#9993; Email</a>
-          <a href="#action" onclick="triggerInDevAdvisory()">&#128722; Online Store <span class="nav-badge">New</span></a>
-          <a href="#action" onclick="triggerInDevAdvisory()">&#128202; Reports</a>
-          <a href="#action" onclick="triggerInDevAdvisory()">&#9881; Settings</a>
-
-          <div class="d-nav-sep">Configure</div>
-          <a href="#action" onclick="triggerInDevAdvisory()">&#128100; User &amp; Authentication</a>
-          <div class="d-subnav">
-            <a href="#action" onclick="triggerInDevAdvisory()">Email</a>
-            <a href="#action" onclick="triggerInDevAdvisory()">Phone</a>
-            <a href="#action" onclick="triggerInDevAdvisory()">Username</a>
-            <a href="#action" onclick="triggerInDevAdvisory()">Social Connections</a>
-            <a href="#action" onclick="triggerInDevAdvisory()">Web3 <span class="nav-badge beta">Beta</span></a>
+          <div class="ai-nav-group-title">Configure</div>
+          <div class="ai-subnav-list">
+            <div class="ai-subnav-item"><span>👤 User &amp; Authentication</span><span>▾</span></div>
+            <div class="ai-subnav-item" style="padding-left:16px"><span>Email, Phone, Username</span></div>
+            <div class="ai-subnav-item" style="padding-left:16px"><span>Social Connections</span></div>
+            <div class="ai-subnav-item" style="padding-left:16px"><span>Web3</span></div>
+            <div class="ai-subnav-item" style="padding-left:16px"><span>Enterprise Connections</span><span class="ai-pill-beta">Beta</span></div>
+            <div class="ai-subnav-item active" style="padding-left:16px"><span>Multi-factor</span></div>
+            <div class="ai-subnav-item" style="padding-left:16px"><span>Restrictions</span></div>
+            <div class="ai-subnav-item"><span>🏢 Organizations</span></div>
+            <div class="ai-subnav-item"><span>🕒 Sessions</span></div>
+            <div class="ai-subnav-item"><span>👤 Account Portal</span><span class="ai-pill-new">New</span></div>
+            <div class="ai-subnav-item"><span>🔌 Integrations</span></div>
+            <div class="ai-subnav-item"><span>🔑 JWT Templates</span></div>
+            <div class="ai-subnav-item"><span>📡 Webhooks</span></div>
           </div>
 
-          <a href="#action" onclick="triggerInDevAdvisory()">&#127970; Organizations Settings</a>
-          <a href="#action" onclick="triggerInDevAdvisory()">&#128477; Session Management</a>
-          <a href="#action" onclick="triggerInDevAdvisory()">&#128100; Account Portal</a>
-          <a href="#action" onclick="triggerInDevAdvisory()">&#128268; Integrations</a>
-          <a href="#action" onclick="triggerInDevAdvisory()">&#128225; Webhooks</a>
-        </nav>
-      </div>
-
-      <div class="d-help-box">
-        <strong>Direct Admin Support</strong>
-        <p>WhatsApp: +233202186264</p>
-        <button type="button" onclick="window.open('https://wa.me/233202186264','_blank')">Open WhatsApp</button>
-      </div>
-    </aside>
-
-    <main class="d-main">
-      <div class="d-topbar">
-        <div class="d-search">
-          <span class="d-search-icon">&#128269;</span>
-          <input type="text" placeholder="Search transactions, customers, invoices..." onkeydown="if(event.key==='Enter')triggerInDevAdvisory()">
+          <div class="ai-nav-group-title">Developers</div>
+          <div class="ai-subnav-list">
+            <div class="ai-subnav-item"><span>🗝️ API Keys</span></div>
+            <div class="ai-subnav-item"><span>🛣️ Paths</span></div>
+          </div>
         </div>
-        <div class="d-user-corner">
-          <button class="d-notif-btn" onclick="triggerInDevAdvisory()" aria-label="Notifications">
-            &#128276;
-            <span class="d-notif-badge"></span>
-          </button>
-          <div class="d-profile-pill">
+      </aside>
+
+      <main class="ai-main-viewport">
+        <div class="ai-topbar">
+          <div class="ai-search-box">
+            <span>🔍</span>
+            <input type="text" placeholder="Search AI tools, templates, or anything ...">
+          </div>
+          <div class="ai-topbar-actions">
+            <button class="btn-ai-new-proj" onclick="triggerInDevAdvisory()">+ New Project</button>
+            <div class="ai-notif-btn" onclick="triggerInDevAdvisory()">🔔<span class="ai-notif-count">3</span></div>
+            <div class="ai-profile-chip">
+              <div class="ai-chip-avatar" id="dash-avatar-circle">T</div>
+              <div class="ai-chip-info">
+                <strong id="dash-user-display">Team Trade</strong>
+                <span id="dash-user-role">Merchant</span>
+              </div>
+            </div>
+            <button class="btn-live-signout" id="btn-logout-action">Sign Out</button>
+          </div>
+        </div>
+
+        <div class="ai-ribbon-bar">
+          <div class="ai-ribbon-tabs">
+            <button class="ai-ribbon-tab active">Home</button>
+            <button class="ai-ribbon-tab">Insert</button>
+            <button class="ai-ribbon-tab">Design</button>
+            <button class="ai-ribbon-tab">Transitions</button>
+            <button class="ai-ribbon-tab">Animations</button>
+            <button class="ai-ribbon-tab">Slide Show</button>
+            <button class="ai-ribbon-tab">Review</button>
+            <button class="ai-ribbon-tab">View</button>
+            <button class="ai-ribbon-tab">Record</button>
+            <button class="ai-ribbon-tab">Add-ins</button>
+            <button class="ai-ribbon-tab">Help</button>
+          </div>
+          <div class="ai-ribbon-shelf">
+            <div class="ai-ribbon-group">
+              <div class="ai-ribbon-btn-big" onclick="triggerInDevAdvisory()"><span style="font-size:15px;color:#38bdf8">🖼️</span><span>New Slide</span></div>
+              <div class="ai-ribbon-sublist">
+                <button class="ai-ribbon-pill-btn" onclick="triggerInDevAdvisory()">Layout ▾</button>
+                <button class="ai-ribbon-pill-btn" onclick="triggerInDevAdvisory()">Reset</button>
+                <button class="ai-ribbon-pill-btn" onclick="triggerInDevAdvisory()">Section ▾</button>
+              </div>
+            </div>
+            <div class="ai-ribbon-group">
+              <div class="ai-ribbon-sublist" style="grid-template-columns:repeat(5, auto)">
+                <button class="ai-ribbon-pill-btn" onclick="triggerInDevAdvisory()">Shapes</button>
+                <button class="ai-ribbon-pill-btn" onclick="triggerInDevAdvisory()">Icons</button>
+                <button class="ai-ribbon-pill-btn" onclick="triggerInDevAdvisory()">3D Models</button>
+                <button class="ai-ribbon-pill-btn" onclick="triggerInDevAdvisory()">SmartArt</button>
+                <button class="ai-ribbon-pill-btn" onclick="triggerInDevAdvisory()">Chart</button>
+              </div>
+            </div>
+            <div class="ai-ribbon-group">
+              <div class="ai-ribbon-sublist" style="grid-template-columns:repeat(3, auto)">
+                <button class="ai-ribbon-pill-btn" onclick="triggerInDevAdvisory()">Text Box</button>
+                <button class="ai-ribbon-pill-btn" onclick="triggerInDevAdvisory()">Header &amp; Footer</button>
+                <button class="ai-ribbon-pill-btn" onclick="triggerInDevAdvisory()">WordArt</button>
+              </div>
+            </div>
+            <div class="ai-ribbon-group">
+              <button class="ai-ribbon-pill-btn" onclick="triggerInDevAdvisory()">Arrange</button>
+              <button class="ai-ribbon-pill-btn" onclick="triggerInDevAdvisory()">Style</button>
+            </div>
+            <button class="ai-share-purple-btn" onclick="triggerInDevAdvisory()"><span>🔗</span><span>Share</span></button>
+          </div>
+        </div>
+
+        <div class="ai-content-canvas">
+          <div class="ai-hero-banner">
             <div>
-              <div class="name" id="dash-user-display" style="font-size:10.5px;font-weight:750"></div>
-              <div class="role" id="dash-user-role" style="font-size:8.5px;color:#64748b">Merchant</div>
+              <div class="ai-banner-tag">⚡ EsselTen AI</div>
+              <h1>Power Your Creativity with EsselTen AI</h1>
+              <p>Create stunning presentations, generate images, build apps, design games and more — all in one place.</p>
+              <button class="btn-ai-hero-cta" onclick="triggerInDevAdvisory()">Start Creating with AI &rarr;</button>
+              <div class="ai-banner-dots">
+                <span class="ai-b-dot active"></span>
+                <span class="ai-b-dot"></span>
+                <span class="ai-b-dot"></span>
+                <span class="ai-b-dot"></span>
+              </div>
             </div>
-            <div class="d-avatar-initials" id="dash-avatar-circle">T</div>
-          </div>
-          <button class="btn btn-light" style="padding:3px 6px;font-size:9.5px" onclick="signOutUser()">Sign Out</button>
-        </div>
-      </div>
-
-      <div class="d-greeting">
-        <h1>Good Day, <span id="dash-username"></span> &#128075;</h1>
-        <p>Here's a quick overview of your business performance.</p>
-      </div>
-
-      <div class="d-stats-4">
-        <div class="d-stat-box">
-          <div class="d-stat-head"><div class="d-stat-icon green">&#36;</div><span>Total Sales</span></div>
-          <div class="d-stat-value">GHS 0.00</div>
-          <svg class="d-stat-spark" viewBox="0 0 100 25" preserveAspectRatio="none"><path d="M0,20 Q20,15 40,18 T70,8 T100,5" fill="none" stroke="#10b981" stroke-width="2"/></svg>
-        </div>
-        <div class="d-stat-box">
-          <div class="d-stat-head"><div class="d-stat-icon blue">&#10003;</div><span>Successful Payments</span></div>
-          <div class="d-stat-value">0</div>
-          <svg class="d-stat-spark" viewBox="0 0 100 25" preserveAspectRatio="none"><path d="M0,18 Q30,22 55,10 T80,14 T100,6" fill="none" stroke="#0284c7" stroke-width="2"/></svg>
-        </div>
-        <div class="d-stat-box">
-          <div class="d-stat-head"><div class="d-stat-icon gold">&#9203;</div><span>Pending Payments</span></div>
-          <div class="d-stat-value">0</div>
-          <svg class="d-stat-spark" viewBox="0 0 100 25" preserveAspectRatio="none"><path d="M0,15 Q30,10 60,18 T100,12" fill="none" stroke="#f59e0b" stroke-width="2"/></svg>
-        </div>
-        <div class="d-stat-box">
-          <div class="d-stat-head"><div class="d-stat-icon red">&#8635;</div><span>Refunds</span></div>
-          <div class="d-stat-value">0</div>
-          <svg class="d-stat-spark" viewBox="0 0 100 25" preserveAspectRatio="none"><path d="M0,18 Q35,16 65,12 T100,16" fill="none" stroke="#ef4444" stroke-width="2"/></svg>
-        </div>
-      </div>
-
-      <div class="d-middle-grid">
-        <div class="d-card">
-          <div class="d-card-head">
-            <h3>Sales Overview</h3>
-            <div style="display:flex;gap:5px;font-size:8.5px;color:#64748b">
-              <span>● Successful</span>
-              <span>● Pending</span>
-              <span>● Failed</span>
+            <div style="text-align:center">
+              <img src="assets/logo-white.jpg" alt="EsselTen AI Hub" style="max-height:180px;border-radius:14px;box-shadow:0 0 30px rgba(0,242,254,0.3)" onerror="this.style.display='none'">
             </div>
           </div>
-          <div class="d-charts-split">
-            <div class="d-bar-chart-mock">
-              <div class="d-bar-group"><div class="d-bar" style="height:20px;background:#10b981"></div><div class="d-bar" style="height:5px;background:#f59e0b"></div></div>
-              <div class="d-bar-group"><div class="d-bar" style="height:36px;background:#10b981"></div><div class="d-bar" style="height:8px;background:#f59e0b"></div></div>
-              <div class="d-bar-group"><div class="d-bar" style="height:54px;background:#10b981"></div><div class="d-bar" style="height:6px;background:#f59e0b"></div></div>
-              <div class="d-bar-group"><div class="d-bar" style="height:26px;background:#10b981"></div></div>
-              <div class="d-bar-group"><div class="d-bar" style="height:68px;background:#10b981"></div><div class="d-bar" style="height:8px;background:#f59e0b"></div></div>
-              <div class="d-bar-group"><div class="d-bar" style="height:76px;background:#10b981"></div><div class="d-bar" style="height:10px;background:#f59e0b"></div></div>
-              <div class="d-bar-group"><div class="d-bar" style="height:48px;background:#10b981"></div></div>
+
+          <div class="ai-stats-row">
+            <div class="ai-stat-card">
+              <div style="display:flex;align-items:center;gap:8px">
+                <div class="ai-stat-icon-wrap green">↗</div>
+                <strong>Total Creations</strong>
+              </div>
+              <div style="display:flex;align-items:baseline;justify-content:space-between;margin:8px 0">
+                <span class="ai-stat-num">24,750</span>
+                <span style="color:#10b981;font-weight:800;font-size:10px">↑ 12.5%</span>
+              </div>
+              <svg viewBox="0 0 100 20" style="width:100%;height:18px"><path d="M0,16 Q25,8 50,14 T100,4" fill="none" stroke="#10b981" stroke-width="2"/></svg>
             </div>
-            <div>
-              <div style="font-size:10px;font-weight:750;margin-bottom:3px">Payment Methods</div>
-              <div style="display:flex;align-items:center;justify-content:center;gap:6px">
-                <div class="donut-circle"><div class="donut-inner"></div></div>
-                <div style="font-size:8.5px;color:#64748b;display:grid;gap:1px">
-                  <span>Card</span><span>MoMo</span><span>Bank</span><span>USSD</span>
+            <div class="ai-stat-card">
+              <div style="display:flex;align-items:center;gap:8px">
+                <div class="ai-stat-icon-wrap purple">🚀</div>
+                <strong>Successful Projects</strong>
+              </div>
+              <div style="display:flex;align-items:baseline;justify-content:space-between;margin:8px 0">
+                <span class="ai-stat-num">23,200</span>
+                <span style="color:#a855f7;font-weight:800;font-size:10px">↑ 14.2%</span>
+              </div>
+              <svg viewBox="0 0 100 20" style="width:100%;height:18px"><path d="M0,18 Q30,6 60,12 T100,2" fill="none" stroke="#a855f7" stroke-width="2"/></svg>
+            </div>
+            <div class="ai-stat-card">
+              <div style="display:flex;align-items:center;gap:8px">
+                <div class="ai-stat-icon-wrap gold">⭐</div>
+                <strong>Pending Reviews</strong>
+              </div>
+              <div style="display:flex;align-items:baseline;justify-content:space-between;margin:8px 0">
+                <span class="ai-stat-num">1,200</span>
+                <span style="color:#ffb81c;font-weight:800;font-size:10px">↑ 8.1%</span>
+              </div>
+              <svg viewBox="0 0 100 20" style="width:100%;height:18px"><path d="M0,15 Q30,12 60,17 T100,8" fill="none" stroke="#ffb81c" stroke-width="2"/></svg>
+            </div>
+            <div class="ai-stat-card">
+              <div style="display:flex;align-items:center;gap:8px">
+                <div class="ai-stat-icon-wrap red">👥</div>
+                <strong>Shared with Team</strong>
+              </div>
+              <div style="display:flex;align-items:baseline;justify-content:space-between;margin:8px 0">
+                <span class="ai-stat-num">350</span>
+                <span style="color:#ef4444;font-weight:800;font-size:10px">↑ 2.3%</span>
+              </div>
+              <svg viewBox="0 0 100 20" style="width:100%;height:18px"><path d="M0,14 Q35,16 70,8 T100,12" fill="none" stroke="#ef4444" stroke-width="2"/></svg>
+            </div>
+          </div>
+
+          <div class="ai-mid-split">
+            <div style="display:flex;flex-direction:column;gap:16px">
+              <div class="ai-card-shell">
+                <div style="display:flex;justify-content:space-between;margin-bottom:12px">
+                  <h3 style="margin:0;font-size:13px;color:#fff">Your Activity Overview</h3>
+                  <div style="display:flex;gap:8px;font-size:9.5px;color:#94a3b8">
+                    <span>● Created</span>
+                    <span>● Shared</span>
+                    <span>● Reviewed</span>
+                  </div>
+                </div>
+                <div class="ai-stacked-bar-container">
+                  <div style="display:flex;flex-direction:column;justify-content:space-between;height:100%;font-size:8px;color:#64748b">
+                    <span>20k</span><span>15k</span><span>10k</span><span>5k</span><span>0</span>
+                  </div>
+                  <div class="ai-bars-flex">
+                    <div class="ai-bar-col"><div class="ai-bar-seg" style="height:36px;background:#00c48c"></div><div class="ai-bar-seg" style="height:12px;background:#ffaa00"></div><span style="font-size:8px;color:#64748b">Jan</span></div>
+                    <div class="ai-bar-col"><div class="ai-bar-seg" style="height:54px;background:#00c48c"></div><div class="ai-bar-seg" style="height:18px;background:#ffaa00"></div><span style="font-size:8px;color:#64748b">Feb</span></div>
+                    <div class="ai-bar-col"><div class="ai-bar-seg" style="height:70px;background:#00c48c"></div><div class="ai-bar-seg" style="height:24px;background:#ffaa00"></div><span style="font-size:8px;color:#64748b">Mar</span></div>
+                    <div class="ai-bar-col"><div class="ai-bar-seg" style="height:58px;background:#00c48c"></div><div class="ai-bar-seg" style="height:14px;background:#ffaa00"></div><span style="font-size:8px;color:#64748b">Apr</span></div>
+                    <div class="ai-bar-col"><div class="ai-bar-seg" style="height:88px;background:#00c48c"></div><div class="ai-bar-seg" style="height:28px;background:#ffaa00"></div><span style="font-size:8px;color:#64748b">May</span></div>
+                    <div class="ai-bar-col"><div class="ai-bar-seg" style="height:96px;background:#00c48c"></div><div class="ai-bar-seg" style="height:32px;background:#ffaa00"></div><span style="font-size:8px;color:#64748b">Jun</span></div>
+                    <div class="ai-bar-col"><div class="ai-bar-seg" style="height:74px;background:#00c48c"></div><div class="ai-bar-seg" style="height:20px;background:#ffaa00"></div><span style="font-size:8px;color:#64748b">Jul</span></div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="ai-card-shell">
+                <h3 style="margin:0 0 10px;font-size:13px;color:#fff">AI Content Types</h3>
+                <div class="ai-donut-grid">
+                  <div class="ai-donut-disc"><div class="ai-donut-hole"></div></div>
+                  <div style="display:grid;gap:4px;font-size:9.5px;color:#cbd5e1">
+                    <div style="display:flex;justify-content:space-between"><span>● Presentation</span><strong>40%</strong></div>
+                    <div style="display:flex;justify-content:space-between"><span>● Image</span><strong>30%</strong></div>
+                    <div style="display:flex;justify-content:space-between"><span>● Animation</span><strong>15%</strong></div>
+                    <div style="display:flex;justify-content:space-between"><span>● Game</span><strong>10%</strong></div>
+                    <div style="display:flex;justify-content:space-between"><span>● Software</span><strong>5%</strong></div>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
-        </div>
 
-        <div>
-          <div class="d-card">
-            <div class="d-card-head">
-              <h3>Quick Actions</h3>
-              <a href="#action" onclick="triggerInDevAdvisory()" style="font-size:9px;color:#0284c7;text-decoration:none">View All</a>
+            <div style="display:flex;flex-direction:column;gap:14px">
+              <div class="ai-card-shell">
+                <div style="display:flex;justify-content:space-between;margin-bottom:10px">
+                  <h3 style="margin:0;font-size:12px;color:#fff">Quick Actions</h3>
+                  <span style="font-size:9px;color:#0284c7;cursor:pointer" onclick="triggerInDevAdvisory()">View All &rarr;</span>
+                </div>
+                <div class="ai-quick-actions-grid">
+                  <div class="ai-action-btn" onclick="triggerInDevAdvisory()"><span style="background:#ef4444;color:#fff;padding:4px;border-radius:4px">P</span><span>Create Presentation</span></div>
+                  <div class="ai-action-btn" onclick="triggerInDevAdvisory()"><span style="background:#8b5cf6;color:#fff;padding:4px;border-radius:4px">🎨</span><span>Design Template</span></div>
+                  <div class="ai-action-btn" onclick="triggerInDevAdvisory()"><span style="background:#0284c7;color:#fff;padding:4px;border-radius:4px">🖼️</span><span>Generate Image</span></div>
+                  <div class="ai-action-btn" onclick="triggerInDevAdvisory()"><span style="background:#f97316;color:#fff;padding:4px;border-radius:4px">▶</span><span>Create Animation</span></div>
+                  <div class="ai-action-btn" onclick="triggerInDevAdvisory()"><span style="background:#a855f7;color:#fff;padding:4px;border-radius:4px">🎮</span><span>Build Game</span></div>
+                  <div class="ai-action-btn" onclick="triggerInDevAdvisory()"><span style="background:#3b82f6;color:#fff;padding:4px;border-radius:4px">📱</span><span>Create App</span></div>
+                </div>
+              </div>
+
+              <div class="ai-balance-card">
+                <div style="display:flex;align-items:center;gap:10px">
+                  <div style="font-size:20px;background:#f59e0b;padding:6px;border-radius:7px;color:#06101e">💳</div>
+                  <div>
+                    <span style="font-size:8.5px;color:#94a3b8">Available Balance</span>
+                    <div style="font-size:15px;font-weight:900;color:#fff">GHS 0.000</div>
+                  </div>
+                </div>
+                <button class="btn-ai-withdraw" onclick="triggerInDevAdvisory()">Withdraw</button>
+              </div>
+
+              <div class="ai-card-shell">
+                <div style="display:flex;justify-content:space-between;margin-bottom:8px">
+                  <h3 style="margin:0;font-size:12px;color:#fff">Recent Activity</h3>
+                  <span style="font-size:9px;color:#0284c7;cursor:pointer" onclick="triggerInDevAdvisory()">View All &rarr;</span>
+                </div>
+                <div style="display:grid;gap:6px;font-size:9.5px">
+                  <div style="display:flex;align-items:center;justify-content:space-between;background:#0c1424;padding:6px;border-radius:6px">
+                    <div style="display:flex;gap:6px;align-items:center">
+                      <span style="background:#ef4444;padding:2px 5px;border-radius:3px;color:#fff;font-weight:900">P</span>
+                      <div><strong>Presentation Generated</strong><br><span style="color:#64748b">Business Growth Plan</span></div>
+                    </div>
+                    <button style="background:#0284c7;border:none;color:#fff;border-radius:4px;padding:2px 7px;font-size:9px" onclick="triggerInDevAdvisory()">Open</button>
+                  </div>
+                  <div style="display:flex;align-items:center;justify-content:space-between;background:#0c1424;padding:6px;border-radius:6px">
+                    <div style="display:flex;gap:6px;align-items:center">
+                      <span style="background:#0284c7;padding:2px 5px;border-radius:3px;color:#fff;font-weight:900">🖼️</span>
+                      <div><strong>Image Created</strong><br><span style="color:#64748b">Modern Tech Art</span></div>
+                    </div>
+                    <button style="background:#0284c7;border:none;color:#fff;border-radius:4px;padding:2px 7px;font-size:9px" onclick="triggerInDevAdvisory()">View</button>
+                  </div>
+                  <div style="display:flex;align-items:center;justify-content:space-between;background:#0c1424;padding:6px;border-radius:6px">
+                    <div style="display:flex;gap:6px;align-items:center">
+                      <span style="background:#a855f7;padding:2px 5px;border-radius:3px;color:#fff;font-weight:900">🎮</span>
+                      <div><strong>Game Shared</strong><br><span style="color:#64748b">Racing Adventure</span></div>
+                    </div>
+                    <button style="background:#9333ea;border:none;color:#fff;border-radius:4px;padding:2px 7px;font-size:9px" onclick="triggerInDevAdvisory()">Share</button>
+                  </div>
+                </div>
+              </div>
+
+              <div style="background:radial-gradient(circle at 10% 20%,#1e1035,#090e1a 90%);border:1px solid #2d1b4e;border-radius:14px;padding:14px;display:flex;align-items:center;justify-content:space-between">
+                <div>
+                  <h4 style="margin:0 0 2px;font-size:11.5px;color:#fff">Share Your AI Creation with EsselTen Team</h4>
+                  <p style="margin:0 0 6px;font-size:9px;color:#94a3b8">Get expert review, feedback and collaboration opportunities.</p>
+                  <button style="background:linear-gradient(135deg,#ffc83b,#ff8c00);border:none;color:#06101e;padding:4px 10px;border-radius:6px;font-weight:850;font-size:9.5px" onclick="triggerInDevAdvisory()">Submit for Review &rarr;</button>
+                </div>
+                <div style="font-size:26px;color:#ffd15c;font-weight:900">E</div>
+              </div>
             </div>
-            <div class="d-actions-grid">
-              <div class="d-action-tile" onclick="triggerInDevAdvisory()">
-                <div class="d-action-icon" style="background:#e0f2fe;color:#0284c7">&#128279;</div>
-                <span>Payment Link</span>
+          </div>
+
+          <div class="ai-card-shell">
+            <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px">
+              <h3 style="margin:0;font-size:12.5px;color:#fff">Explore &amp; Share Your Creations</h3>
+              <span style="font-size:9px;color:#0284c7;cursor:pointer" onclick="triggerInDevAdvisory()">View All &rarr;</span>
+            </div>
+            <div class="ai-creations-grid">
+              <div class="ai-creation-card">
+                <div class="ai-creation-thumb"><span style="font-size:24px;color:#ef4444">📊</span></div>
+                <h5>Presentation</h5><span>2m ago</span>
+                <div class="ai-card-btn-duo"><button onclick="triggerInDevAdvisory()">Open</button><button onclick="triggerInDevAdvisory()">Share</button></div>
               </div>
-              <div class="d-action-tile" onclick="triggerInDevAdvisory()">
-                <div class="d-action-icon" style="background:#e0f2fe;color:#0284c7">&#128196;</div>
-                <span>Invoice</span>
+              <div class="ai-creation-card">
+                <div class="ai-creation-thumb"><span style="font-size:24px;color:#0284c7">🖼️</span></div>
+                <h5>Image</h5><span>5m ago</span>
+                <div class="ai-card-btn-duo"><button onclick="triggerInDevAdvisory()">Open</button><button onclick="triggerInDevAdvisory()">Share</button></div>
               </div>
-              <div class="d-action-tile" onclick="triggerInDevAdvisory()">
-                <div class="d-action-icon" style="background:#fae8ff;color:#c026d3">&#8599;</div>
-                <span>Payout</span>
+              <div class="ai-creation-card">
+                <div class="ai-creation-thumb"><span style="font-size:24px;color:#a855f7">🎮</span></div>
+                <h5>Game</h5><span>8m ago</span>
+                <div class="ai-card-btn-duo"><button onclick="triggerInDevAdvisory()">Open</button><button onclick="triggerInDevAdvisory()">Share</button></div>
               </div>
-              <div class="d-action-tile" onclick="triggerInDevAdvisory()">
-                <div class="d-action-icon" style="background:#e0f2fe;color:#0284c7">&#127760;</div>
-                <span>Domain</span>
+              <div class="ai-creation-card">
+                <div class="ai-creation-thumb"><span style="font-size:24px;color:#00c48c">💻</span></div>
+                <h5>Software</h5><span>10m ago</span>
+                <div class="ai-card-btn-duo"><button onclick="triggerInDevAdvisory()">Open</button><button onclick="triggerInDevAdvisory()">Share</button></div>
               </div>
-              <div class="d-action-tile" onclick="triggerInDevAdvisory()">
-                <div class="d-action-icon" style="background:#e0f2fe;color:#0284c7">&#128187;</div>
-                <span>Hosting</span>
-              </div>
-              <div class="d-action-tile" onclick="window.open('https://wa.me/233202186264','_blank')">
-                <div class="d-action-icon" style="background:#e8fdf0;color:#25d366">&#128172;</div>
-                <span>WhatsApp</span>
+              <div class="ai-creation-card">
+                <div class="ai-creation-thumb"><span style="font-size:24px;color:#f97316">🎬</span></div>
+                <h5>Animation</h5><span>12m ago</span>
+                <div class="ai-card-btn-duo"><button onclick="triggerInDevAdvisory()">Play</button><button onclick="triggerInDevAdvisory()">Share</button></div>
               </div>
             </div>
           </div>
-
-          <div class="d-balance-box">
-            <div>
-              <span style="font-size:8.5px;color:#94a3b8">Available Balance</span>
-              <div class="d-balance-val">GHS 0.00</div>
-            </div>
-            <button type="button" class="btn-withdraw" onclick="triggerInDevAdvisory()">Withdraw</button>
-          </div>
         </div>
-      </div>
 
-      <div class="d-lower-grid">
-        <div class="d-card">
-          <div class="d-card-head"><h3>Recent Transactions</h3></div>
-          <div class="d-empty-state">
-            <div class="d-empty-icon">&#128196;</div>
-            <h4>No transactions yet</h4>
-            <p>Your transactions will appear here when you start accepting payments.</p>
-            <button type="button" onclick="triggerInDevAdvisory()">Set Up Payments</button>
-          </div>
+        <div class="ai-dash-bottom-strip">
+          <div style="display:flex;align-items:center;gap:6px"><strong style="color:#ffd15c">E</strong><span>EsselTen</span></div>
+          <div style="display:flex;gap:14px"><span>🛡️ Secure &amp; Trusted</span><span>⚡ Powered by Advanced AI</span><span>📊 Build &middot; Innovate &middot; Grow</span></div>
+          <div style="display:flex;gap:8px"><span>YouTube</span><span>X</span><span>LinkedIn</span><span>Discord</span></div>
+          <div style="font-style:italic;color:#64748b">Your Digital Future, Our Priority</div>
         </div>
-        <div class="d-card">
-          <div class="d-card-head"><h3>Recent Activity</h3></div>
-          <div class="d-empty-state" style="padding:14px 6px">
-            <div class="d-empty-icon" style="background:#f1f5f9;color:#94a3b8">&#128203;</div>
-            <h4>No recent activity</h4>
-            <p>Your activity logs will appear here.</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="d-bottom-row">
-        <div class="d-bottom-tile"><strong>🛡️ Security</strong><p>Account protected.</p></div>
-        <div class="d-bottom-tile"><strong>⚙ Insights</strong><p>Activity stable.</p></div>
-        <div class="d-bottom-tile"><strong>🌐 Domains</strong><p>DNS active.</p></div>
-        <div class="d-bottom-tile"><strong>🖥 Hosting</strong><p>Instances online.</p></div>
-        <div class="d-bottom-tile"><strong>✉ Email</strong><p>Mailboxes ready.</p></div>
-        <div class="d-bottom-tile"><strong>🔄 Tiers</strong><p>Status verified.</p></div>
-      </div>
-    </main>
+      </main>
+    </div>
   </div>
 </div>
 
@@ -3063,9 +3188,20 @@ Prepare for Publishing — Guide users through the requirements for publishing t
 
   const byId = (id) => document.getElementById(id);
   const showErr = (msg) => { const b = byId('auth-err-box'); b.textContent = msg; b.classList.add('show'); };
-  const clearAlerts = () => { byId('auth-err-box').classList.remove('show'); byId('auth-ok-box').classList.remove('show'); };
+  const clearAlerts = () => { byId('auth-err-box').classList.remove('show'); };
 
-  /* --- REAL-TIME LIVE COUNTERS (STRICT FIRESTORE RECOGNITION) --- */
+  function showSplash(msg = "Initializing Secure Enterprise Session...") {
+    const splash = byId('auth-splash-screen');
+    byId('splash-status-msg').textContent = msg;
+    splash.classList.add('show');
+  }
+
+  function hideSplash() {
+    const splash = byId('auth-splash-screen');
+    splash.classList.remove('show');
+  }
+
+  /* --- REAL-TIME LIVE COUNTERS (STRICT FIRESTORE) --- */
   function updateCountersUI(visitors, members) {
     const vFormat = Number(visitors || 0).toLocaleString();
     const mFormat = Number(members || 0).toLocaleString();
@@ -3078,7 +3214,6 @@ Prepare for Publishing — Guide users through the requirements for publishing t
   async function initLiveCounters() {
     if (!db) return;
     const statsRef = doc(db, "platform_metrics", "live_stats");
-
     onSnapshot(statsRef, (docSnap) => {
       if (docSnap.exists()) {
         const data = docSnap.data();
@@ -3098,7 +3233,7 @@ Prepare for Publishing — Guide users through the requirements for publishing t
     }
   }
 
-  // Ensures only unique registered members are added to waitlist. Logins do not increment.
+  // Registers member in Firestore once. Subsequent logins never increment waitlist.
   async function registerMemberInWaitlist(user) {
     if (!db || !user) return;
     try {
@@ -3113,7 +3248,7 @@ Prepare for Publishing — Guide users through the requirements for publishing t
         await updateDoc(statsRef, { registeredMembers: increment(1) });
       }
     } catch (err) {
-      console.warn("Waitlist verification note:", err);
+      console.warn("Waitlist check note:", err);
     }
   }
 
@@ -3221,7 +3356,13 @@ Prepare for Publishing — Guide users through the requirements for publishing t
   };
 
   window.signOutUser = async () => {
-    try { await signOut(auth); } catch (e) { console.error(e); }
+    try {
+      showSplash("Signing out securely...");
+      await signOut(auth);
+    } catch (e) {
+      console.error(e);
+      hideSplash();
+    }
   };
 
   document.querySelectorAll('.auth-open-signup').forEach(b => {
@@ -3255,12 +3396,14 @@ Prepare for Publishing — Guide users through the requirements for publishing t
       isSubmitting = true;
       btn.textContent = 'Registering…';
       try {
+        showSplash("Creating secure member account & updating waitlist...");
         const cred = await createUserWithEmailAndPassword(auth, email, pass);
         const fullName = `${fn} ${ln}`.trim() || 'Member';
         try { await updateProfile(cred.user, { displayName: fullName }); } catch (p) {}
         await registerMemberInWaitlist(cred.user);
         window.closeAuthModal();
       } catch (err) {
+        hideSplash();
         showErr(friendlyAuthError(err));
       } finally {
         isSubmitting = false;
@@ -3270,9 +3413,11 @@ Prepare for Publishing — Guide users through the requirements for publishing t
       isSubmitting = true;
       btn.textContent = 'Signing in…';
       try {
+        showSplash("Authenticating secure credentials...");
         await signInWithEmailAndPassword(auth, email, pass);
         window.closeAuthModal();
       } catch (err) {
+        hideSplash();
         showErr(friendlyAuthError(err));
       } finally {
         isSubmitting = false;
@@ -3284,10 +3429,12 @@ Prepare for Publishing — Guide users through the requirements for publishing t
   byId('google-direct-btn').addEventListener('click', async () => {
     clearAlerts();
     try {
+      showSplash("Authenticating with Google OAuth...");
       const cred = await signInWithPopup(auth, googleProvider);
       await registerMemberInWaitlist(cred.user);
       window.closeAuthModal();
     } catch (err) {
+      hideSplash();
       if (err?.code === 'auth/popup-blocked') {
         try { await signInWithRedirect(auth, googleProvider); return; } catch (r) { showErr(friendlyAuthError(r)); }
       }
@@ -3299,17 +3446,22 @@ Prepare for Publishing — Guide users through the requirements for publishing t
     const landing = byId('landing-root');
     const dashboard = byId('dashboard-view');
     if (user) {
+      showSplash("Loading AI Studio Workspace...");
       await registerMemberInWaitlist(user);
-      landing.style.display = 'none';
-      dashboard.classList.add('show');
-      window.scrollTo(0, 0);
+      setTimeout(() => {
+        hideSplash();
+        landing.style.display = 'none';
+        dashboard.classList.add('show');
+        window.scrollTo(0, 0);
 
-      const name = user.displayName || user.email?.split('@')[0] || 'Member';
-      byId('dash-username').textContent = name;
-      byId('dash-user-display').textContent = name;
-      byId('dash-user-role').textContent = user.email || 'Merchant';
-      byId('dash-avatar-circle').textContent = name.charAt(0).toUpperCase();
+        const name = user.displayName || user.email?.split('@')[0] || 'Member';
+        byId('dash-username').textContent = name;
+        byId('dash-user-display').textContent = name;
+        byId('dash-user-role').textContent = user.email || 'Merchant';
+        byId('dash-avatar-circle').textContent = name.charAt(0).toUpperCase();
+      }, 1200);
     } else {
+      hideSplash();
       dashboard.classList.remove('show');
       landing.style.display = '';
     }
